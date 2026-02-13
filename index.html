@@ -16,12 +16,13 @@
             background-color: #fff;
             padding: clamp(2rem, 5vw, 4rem) clamp(1rem, 5vw, 5rem);
             line-height: 1.6;
+
         }
         
         
         
         h1 {
-            font-size: clamp(3rem, 7vw, 6rem);
+            font-size: clamp(2.5rem, 6vw, 6rem);
             font-weight: 700;
             color: #3C68ED;
             line-height: 1;
@@ -32,11 +33,11 @@
         h1 span {
             display: block;
             color: #7F8AAA;
-            font-size: clamp(3rem, 7vw, 6rem);
+            font-size: clamp(2.5rem, 7vw, 6rem);
 
         }
         
-        .content {
+        .main {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: clamp(1rem, 2vw, 2rem);
@@ -45,7 +46,7 @@
             flex-wrap: wrap;
         }
         
-        .content img {
+        .main img {
             width: 100%;
             max-width: 450px;
             height: 100%;
@@ -90,15 +91,12 @@
         }
     
         @media (max-width: 1100px) {
-            .content {
+            .main {
                 grid-template-columns: 1fr 1fr;
                 align-items: stretch;
             }
             
-            .content img:first-child {
-                grid-column: 1;
-                grid-row: 1;
-            }
+
             
             .text-block {
                 grid-column: 1 / -1;
@@ -118,13 +116,31 @@
                 margin-top: 2rem;
             }
         }
+
+        .logos {
+            --g: 2rem;
+            margin-top: 3rem;
+            display: flex;
+            overflow: hidden;
+            gap: var(--g);
+        }
+        .logos > div {
+            flex-shrink: 0;
+            min-width: 100%;
+            display: flex;
+            gap: var(--g);
+            justify-content: space-around;
+            animation: scroll 30s linear infinite;
+        }
+        .logos span { font-size: 4rem; opacity: 0.7; }
+        @keyframes scroll { to { transform: translateX(calc(-100% - var(--g))); } }
     </style>
 </head>
 <body>
     <h1 class="heading">Versicherungen<span>für Expats</span></h1>
 
     <main>
-        <section class="content">
+        <section class="main">
             <img src="images/pexels-mjlo-30709720_ergebnis.webp" alt="Desert path with buildings" loading="lazy">
             
             <div class="text-block">
@@ -137,5 +153,10 @@
             <img src="images/pexels-horacio-lander-1239977167-35578134_ergebnis.webp" alt="Church on hill with mountains" loading="lazy">
         </section>
     </main>
+
+    <div class="logos">
+        <div><span>◆</span><span>★</span><span>●</span><span>▲</span><span>■</span><span>♦</span></div>
+        <div aria-hidden="true"><span>◆</span><span>★</span><span>●</span><span>▲</span><span>■</span><span>♦</span></div>
+    </div>
 </body>
 </html>
