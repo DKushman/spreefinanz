@@ -134,6 +134,67 @@
         }
         .logos span { font-size: 4rem; opacity: 0.7; }
         @keyframes scroll { to { transform: translateX(calc(-100% - var(--g))); } }
+
+        .worauf-achten {
+            margin-top: clamp(3rem, 8vw, 5rem);
+            text-align: center;
+        }
+        .worauf-achten h2 {
+            font-size: clamp(1.75rem, 4vw, 2.5rem);
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+        .worauf-achten .intro {
+            max-width: 42rem;
+            margin: 0 auto 2.5rem;
+            color: #4b5563;
+            font-size: clamp(0.9rem, 2vw, 1rem);
+        }
+        .worauf-achten .items {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: clamp(1.5rem, 3vw, 2.5rem);
+            text-align: left;
+            margin-bottom: 2.5rem;
+        }
+        .worauf-achten .item {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+        .worauf-achten .item-num {
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 50%;
+            background: #e5e7eb;
+            color: #374151;
+            font-weight: 700;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        .worauf-achten h3 {
+            font-size: clamp(1rem, 2vw, 1.15rem);
+            font-weight: 700;
+            color: #1f2937;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .worauf-achten .item p {
+            color: #4b5563;
+            font-size: clamp(0.85rem, 1.5vw, 0.95rem);
+            line-height: 1.6;
+            margin-left: 3rem;
+        }
+        .worauf-achten .cta { margin-top: 0.5rem; }
+        @media (max-width: 768px) {
+            .worauf-achten .items { grid-template-columns: 1fr; }
+            .worauf-achten .item p { margin-left: 0; }
+        }
     </style>
 </head>
 <body>
@@ -158,5 +219,26 @@
         <div><span>◆</span><span>★</span><span>●</span><span>▲</span><span>■</span><span>♦</span></div>
         <div aria-hidden="true"><span>◆</span><span>★</span><span>●</span><span>▲</span><span>■</span><span>♦</span></div>
     </div>
+    <section class="worauf-achten">
+        <h2>Worauf solltest du achten?</h2>
+        <p class="intro">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+        <div class="items">
+            <div class="item">
+                <h3><span class="item-num">01</span> H3 Sachen Achten</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+            </div>
+            <div class="item">
+                <h3><span class="item-num">02</span> H3 Sachen Achten</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+            </div>
+            <div class="item">
+                <h3><span class="item-num">03</span> H3 Sachen Achten</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+            </div>
+        </div>
+        <div class="button-container cta">
+            <button>Hast du noch Fragen?</button>
+        </div>
+    </section>
 </body>
 </html>
