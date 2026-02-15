@@ -84,6 +84,8 @@
             display: flex;
             justify-content: center;
             margin-top: auto;
+            margin-top: 2rem;
+
         }
         
         button {
@@ -124,9 +126,6 @@
                 max-width: 100%;
                 aspect-ratio: 3 / 4;
             }
-            .button-container {
-                margin-top: 2rem;
-            }
         }
 
         .logos {
@@ -159,11 +158,12 @@
             color: #1f2937;
             margin-bottom: 1rem;
         }
-        .worauf-achten .intro {
+        .intro {
             max-width: 42rem;
             margin: 0 auto 2.5rem;
             color: #4b5563;
             font-size: clamp(0.9rem, 2vw, 1rem);
+            text-align: center;
         }
         .worauf-achten .items {
             display: grid;
@@ -216,6 +216,45 @@
             .worauf-achten .items { grid-template-columns: 1fr; }
             .worauf-achten .item p { margin-left: 0; }
         }
+
+        .zahlen-h2 {
+            text-align: center;
+        }
+        .zahlen-list {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: clamp(1rem, 2vw, 2rem);
+            text-align: center;
+            padding: 0;
+            padding-bottom: clamp(1rem, 2vw, 2rem);
+        }
+        .zahlen-list li {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .zahlen-list li:nth-child(2) {
+            border-left: 1px solid #e5e7eb;
+            border-right: 1px solid #e5e7eb;
+        }
+        .zahlen-label {
+            font-size: clamp(0.5rem, 1.5vw, 1rem);
+            color: #4b5563;
+        }
+        .zahlen-value {
+            font-size: clamp(3rem, 5vw, 7rem);
+            color: #1f2937;
+            font-weight: 700;
+        }
+        @media (max-width: 768px) {
+            .zahlen-list {
+                grid-template-columns: 1fr;
+            }
+            .zahlen-list li:nth-child(2) {
+                border-left: none;
+                border-right: none;
+            }
+        }
     </style>
 </head>
 <body>
@@ -259,6 +298,18 @@
         </div>
         <div class="button-container cta">
             <button>Hast du noch Fragen?</button>
+        </div>
+    </section>
+    <section class="zahlen">
+        <h2 class="zahlen-h2">Was ist mit inbegriffen?</h2>
+        <p class="intro">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+        <ul class="zahlen-list">
+            <li><span class="zahlen-value">+180</span><span class="zahlen-label">Länder</span></li>
+            <li><span class="zahlen-value">+10M</span><span class="zahlen-label">Euro abgesichert</span></li>
+            <li><span class="zahlen-value">365</span><span class="zahlen-label">Tage Schutz</span></li>
+        </ul>
+        <div class="button-container">
+            <button>Erfahre die genauen Konditionen</button>
         </div>
     </section>
 </body>
