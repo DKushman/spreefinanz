@@ -328,7 +328,7 @@
         .prozess { display: flex; justify-content: center; }
         .prozess-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(3rem, 8vw, 5rem); align-items: start; min-width: 0; width: 100%; max-width: 100%; }
         .prozess-grid > .prozess-intro { align-self: stretch; }
-        .prozess-intro { position: sticky; top: clamp(1rem, 5vh, 2rem); margin-block: auto; }
+        .prozess-intro { position: sticky; top: 30vh; margin-bottom: auto; }
         .prozess-intro .button-container { justify-content: center; }
         .prozess-steps { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: clamp(1.25rem, 3vw, 2rem); justify-content: center; align-items: center; }
         .prozess-steps li { display: grid; grid-template-columns: auto 1fr; grid-template-rows: auto auto; column-gap: clamp(0.75rem, 2vw, 1rem); row-gap: 0.25rem; max-width: 30rem;}
@@ -339,6 +339,13 @@
             .prozess-grid { grid-template-columns: 1fr; }
             .prozess-intro { position: static; }
         }
+
+        .fehler { text-align: center; }
+        .fehler-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(1rem, 2vw, 1.5rem); margin-inline: auto; margin-bottom: clamp(1.5rem, 3vw, 2rem); min-width: 0; }
+        .fehler-card { background: rgba(181, 46, 48, 0.1); border-radius: clamp(8px, 2vw, 12px); padding: clamp(1rem, 2.5vw, 1.5rem); text-align: left; }
+        .fehler-card h3 { font-size: clamp(1rem, 2vw, 1.2rem); font-weight: 700; color: #B52E30; margin: 0 0 clamp(0.5rem, 1vw, 0.75rem); }
+        .fehler-card p { margin: 0; font-size: clamp(0.85rem, 1.5vw, 0.95rem); color: #4b5563; line-height: 1.5; }
+        @media (max-width: 768px) { .fehler-grid { grid-template-columns: 1fr; } }
     </style>
 </head>
 <body>
@@ -530,6 +537,26 @@
             </ol>
         </div>
     </section>
-    <section class="fehler" style="height: 100vh;"></section>
+    <section class="fehler">
+        <h2>Welche Fehler kann man bei der Auswahl machen?</h2>
+        <p class="intro">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+        <div class="fehler-grid">
+            <div class="fehler-card">
+                <h3>Eier lecken mit Aufsicht dritter</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+            </div>
+            <div class="fehler-card">
+                <h3>Eier lecken mit Aufsicht dritter</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+            </div>
+            <div class="fehler-card">
+                <h3>Eier lecken mit Aufsicht dritter</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+            </div>
+        </div>
+        <div class="button-container">
+            <button>direkt eine Anfrage stellen</button>
+        </div>
+    </section>
 </body>
 </html>
