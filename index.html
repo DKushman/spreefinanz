@@ -357,7 +357,7 @@
         .faq-list details p { margin: 0; padding: 0 clamp(1rem, 2.5vw, 1.25rem) clamp(1rem, 2.5vw, 1.25rem) clamp(1.25rem, 2.5vw, 1.5rem); font-size: clamp(0.85rem, 1.5vw, 0.95rem); color: #4b5563; line-height: 1.5; }
 
         .interessanter { text-align: center; }
-        .interessanter-row { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: clamp(1rem, 2.5vw, 1.5rem); align-items: center; padding: clamp(1rem, 2.5vw, 1.5rem) 0; border-top: 1px solid #e5e7eb; min-width: 0; }
+        .interessanter-row { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: clamp(1rem, 2.5vw, 1.5rem); align-items: center; padding: clamp(1rem, 2.5vw, 1.5rem) 0; border-top: 1px solid #e5e7eb; min-width: 0; background-color: #ffffff;}
         .interessanter-row:last-child { border-bottom: 1px solid #e5e7eb; }
         .interessanter-num { font-size: clamp(2rem, 4vw, 3rem); font-weight: 700; color: #1f2937; text-align: left; margin-bottom: auto;}
         .interessanter-content { grid-column: 2 / -1; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); gap: clamp(1rem, 2.5vw, 1.5rem); min-width: 0; }
@@ -370,6 +370,26 @@
             .interessanter-content { grid-column: 1; grid-template-columns: 1fr; }
             .interessanter-content .img-wrap { aspect-ratio: 4/3; max-height: clamp(200px, 50vw, 320px); }
         }
+        .interessanter-row:nth-child(1){
+            position: sticky;
+            top: 10vh;
+        }
+        .interessanter-row:nth-child(2){
+            position: sticky;
+            top: 10vh;
+            z-index: 1;
+        }
+        .interessanter-row:nth-child(3){
+            position: sticky;
+            top: 10vh;
+            z-index: 2;
+        }
+
+        .cta { text-align: center; }
+        .cta-box { background: rgba(46, 80, 181, 0.1); border-radius: clamp(10px, 2.5vw, 16px); padding: clamp(1.5rem, 4vw, 2.5rem);}
+        .cta-icon { display: block; width: clamp(2.5rem, 6vw, 3.5rem); height: clamp(2.5rem, 6vw, 3.5rem); margin: 0 auto clamp(0.75rem, 2vw, 1rem); color: #2E50B5; }
+        .cta-box h2 { color: #2E50B5; margin-bottom: clamp(0.5rem, 1vw, 0.75rem); }
+        .cta-box p { margin: 0 0 clamp(1rem, 2vw, 1.25rem); color: #4b5563; font-size: clamp(0.9rem, 1.5vw, 1rem); }
     </style>
 </head>
 <body>
@@ -505,7 +525,7 @@
         <p class="intro">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
         <div class="warumwir-grid">
             <div class="warumwir-img">
-                <img src="images/pexels-mjlo-30709720_ergebnis.webp" alt="" width="400" height="300" loading="lazy">
+                <img src="images/contactphoto_ergebnis.webp" alt="" width="400" height="300" loading="lazy">
             </div>
             <div class="warumwir-text">
                 <div class="warumwir-content">
@@ -648,6 +668,14 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+    <section class="cta">
+        <div class="cta-box">
+            <svg class="cta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"/></svg>
+            <h2>Erhalte eine direkte Beratung</h2>
+            <p>Wir helfen euch gerne sofort bei Fragen und stehen euch zur Hilfe bereit.</p>
+            <div class="button-container"><button>direkt eine Anfrage stellen</button></div>
         </div>
     </section>
 </body>
