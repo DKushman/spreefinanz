@@ -29,6 +29,7 @@
             color: #1f2937;
             margin-bottom: 1rem;
             line-height: 1;
+            text-align: center;
         }
         h1 {
             font-size: clamp(2.5rem, 6vw, 6rem);
@@ -79,12 +80,14 @@
             text-align: center;
             height: 100%;
         }
-        
+        .button-container.hero {
+            margin-top: auto;
+            margin-bottom: 0;
+        }
         .button-container {
             display: flex;
             justify-content: center;
             margin-top: auto;
-            margin-top: 2rem;
 
         }
         
@@ -170,7 +173,7 @@
             grid-template-columns: repeat(3, 1fr);
             gap: clamp(1.5rem, 3vw, 2.5rem);
             text-align: left;
-            margin-bottom: 2.5rem;
+            margin-bottom: clamp(2rem, 5vw, 4rem);
             min-width: 0;
         }
         .worauf-achten .item {
@@ -226,7 +229,7 @@
             gap: clamp(1rem, 2vw, 2rem);
             text-align: center;
             padding: 0;
-            padding-bottom: clamp(1rem, 2vw, 2rem);
+            margin-bottom: clamp(2rem, 5vw, 4rem);
         }
         .zahlen-list li {
             display: flex;
@@ -267,7 +270,7 @@
             
             <div class="text-block">
                 <p class="p-main">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidun</p>
-                <div class="button-container">
+                <div class="button-container hero">
                     <button>oder direkt eine Anfrage stellen</button>
                 </div>
             </div>
@@ -312,6 +315,9 @@
         <div class="button-container">
             <button>Erfahre die genauen Konditionen</button>
         </div>
+    </section>
+    <section class="fuerwen">
+        <h2>Für wen ist diese Versicherung geeignet?</h2>
     </section>
 </body>
 </html>
