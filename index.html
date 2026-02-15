@@ -49,16 +49,15 @@
         .p-main {
             margin-inline: auto;
         }
-        .main {
+        .main .heading { margin-bottom: clamp(1rem, 2vw, 2rem); }
+        .main-content {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
             gap: clamp(1rem, 2vw, 2rem);
             align-items: flex-start;
-            flex-wrap: wrap;
             min-width: 0;
         }
-        
-        .main img {
+        .main-content img {
             width: 100%;
             max-width: 450px;
             height: 100%;
@@ -70,7 +69,7 @@
         }
 
         
-        .text-block {
+        .main-content .text-block {
             flex: 1 1 min(300px, 100%);
             min-width: 0;
             color: #1f2937;
@@ -108,24 +107,19 @@
         }
     
         @media (max-width: 1100px) {
-            .main {
+            .main-content {
                 grid-template-columns: 1fr 1fr;
                 align-items: stretch;
             }
-            
-
-            
-            .text-block {
+            .main-content .text-block {
                 grid-column: 1 / -1;
                 grid-row: 2;
             }
-            
-            .content img:last-child {
+            .main-content img:last-child {
                 grid-column: 2;
                 grid-row: 1;
             }
-            
-            .content img {
+            .main-content img {
                 max-width: 100%;
                 aspect-ratio: 3 / 4;
             }
@@ -393,22 +387,20 @@
     </style>
 </head>
 <body>
-    <h1 class="heading">Versicherungen<span>für Expats</span></h1>
-
     <main>
         <section class="main">
-            <img src="images/pexels-mjlo-30709720_ergebnis.webp" alt="Desert path with buildings" width="300" height="400">
-            
-            <div class="text-block">
-                <p class="p-main">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidun</p>
-                <div class="button-container hero">
-                    <button>oder direkt eine Anfrage stellen</button>
+            <h1 class="heading">Versicherungen<span>für Expats</span></h1>
+            <div class="main-content">
+                <img src="images/pexels-mjlo-30709720_ergebnis.webp" alt="Desert path with buildings" width="300" height="400">
+                <div class="text-block">
+                    <p class="p-main">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidun</p>
+                    <div class="button-container hero">
+                        <button>oder direkt eine Anfrage stellen</button>
+                    </div>
                 </div>
+                <img src="images/pexels-horacio-lander-1239977167-35578134_ergebnis.webp" alt="Church on hill with mountains" width="300" height="400">
             </div>
-            
-            <img src="images/pexels-horacio-lander-1239977167-35578134_ergebnis.webp" alt="Church on hill with mountains" width="300" height="400">
         </section>
-    </main>
 
     <div class="logos">
         <div><span>◆</span><span>★</span><span>●</span><span>▲</span><span>■</span><span>♦</span></div>
@@ -678,5 +670,6 @@
             <div class="button-container"><button>direkt eine Anfrage stellen</button></div>
         </div>
     </section>
+</main>
 </body>
 </html>
