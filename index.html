@@ -262,10 +262,19 @@
 
         .fuerwen { max-width: 42rem; margin-inline: auto; }
         .fuerwen-list { list-style: none; padding: 0; margin: 0; }
-        .fuerwen-list li { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem; }
-        .fuerwen-icon { width: 2.25rem; height: 2.25rem; border-radius: 50%; background: #3C68ED; color: #fff; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 1.2rem; }
-        .fuerwen-box { flex: 1; min-width: 0; padding: 0.75rem 1rem; border: 2px solid #3C68ED; border-radius: 12px; color: #3C68ED; text-align: center; }
-        @media (max-width: 480px) { .fuerwen-list li { flex-direction: column; align-items: stretch; text-align: center; } }
+        .fuerwen-list li { display: flex; align-items: center; margin-bottom: 1rem; }
+        .fuerwen-icon { width: 4rem; height: 4rem; border-radius: 50%; background: transparent; color: #3C68ED; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 1.2rem; border: 2px solid #3C68ED; transition: background-color 0.2s; transition: color 0.2s; }
+        .fuerwen-box { flex: 1; min-width: 0; padding: 0.75rem 1rem; border: 2px solid #3C68ED; border-radius: 12px; color: #3C68ED; text-align: center; font-size: clamp(1rem, 1.5vw, 1rem); font-weight: 500;}
+        .fuerwen-icon:hover {
+            background: #2d5ad9;
+            color: #fff;
+            transition: background-color 0.2s;
+            transition: color 0.2s;
+        }
+        @media (min-width: 769px) {
+            .fuerwen-box { padding: 1rem 1.5rem; font-size: 1.15rem; }
+        }
+
     </style>
 </head>
 <body>
