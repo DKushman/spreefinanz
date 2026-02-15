@@ -51,16 +51,13 @@
         }
         .main .heading { margin-bottom: clamp(1rem, 2vw, 2rem); }
         .main {
-            opacity: 0;
-            animation: mainFadeIn 0.7s ease-out forwards;
+            animation: mainFadeIn 0.7s ease-out both;
         }
         .main .heading {
-            opacity: 0;
-            animation: mainFadeIn 0.5s ease-out 0.15s forwards;
+            animation: mainFadeIn 0.5s ease-out 0.15s both;
         }
         .main .main-content {
-            opacity: 0;
-            animation: mainFadeIn 0.5s ease-out 0.3s forwards;
+            animation: mainFadeIn 0.5s ease-out 0.3s both;
         }
         @keyframes mainFadeIn {
             from {
@@ -710,14 +707,22 @@
 </main>
 <script>
 (function () {
-    var section = document.querySelector('.zahlen');
-    if (!section) return;
-    var observer = new IntersectionObserver(function (entries) {
-        entries.forEach(function (entry) {
-            if (entry.isIntersecting) entry.target.classList.add('in-view');
-        });
-    }, { threshold: 0.5 });
-    observer.observe(section);
+    var run = function () {
+        var section = document.querySelector('.zahlen');
+        if (section) {
+            var observer = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) entry.target.classList.add('in-view');
+                });
+            }, { threshold: 0.5 });
+            observer.observe(section);
+        }
+    };
+    if (window.requestIdleCallback) {
+        requestIdleCallback(run, { timeout: 400 });
+    } else {
+        setTimeout(run, 0);
+    }
 })();
 </script>
 </body>
