@@ -8,7 +8,7 @@
 
         
         html {
-            overflow-x: hidden;
+            overflow-x: clip;
         }
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
@@ -16,7 +16,7 @@
             padding: clamp(2rem, 5vw, 4rem) clamp(1rem, 5vw, 5rem);
             line-height: 1.6;
             padding-top: 0;
-            overflow-x: hidden;
+            overflow-x: clip;
             min-width: 0;
         }
 
@@ -324,6 +324,21 @@
             .warumwir-grid > *:nth-child(7) { order: 8; }
             .warumwir-grid > *:nth-child(8) { order: 7; }
         }
+
+        .prozess { display: flex; justify-content: center; }
+        .prozess-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(3rem, 8vw, 5rem); align-items: start; min-width: 0; width: 100%; max-width: 100%; }
+        .prozess-grid > .prozess-intro { align-self: stretch; }
+        .prozess-intro { position: sticky; top: clamp(1rem, 5vh, 2rem); margin-block: auto; }
+        .prozess-intro .button-container { justify-content: center; }
+        .prozess-steps { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: clamp(1.25rem, 3vw, 2rem); justify-content: center; align-items: center; }
+        .prozess-steps li { display: grid; grid-template-columns: auto 1fr; grid-template-rows: auto auto; column-gap: clamp(0.75rem, 2vw, 1rem); row-gap: 0.25rem; max-width: 30rem;}
+        .prozess-num { grid-row: 1 / -1; width: clamp(2.25rem, 4vw, 2.75rem); height: clamp(2.25rem, 4vw, 2.75rem); border: 2px solid #3C68ED; border-radius: clamp(6px, 1.5vw, 10px); color: #3C68ED; font-weight: 700; font-size: clamp(0.95rem, 1.5vw, 1.1rem); display: flex; align-items: center; justify-content: center; }
+        .prozess-steps h3 { font-size: clamp(1rem, 2vw, 1.15rem); font-weight: 700; color: #1f2937; margin: 0; grid-column: 2; }
+        .prozess-steps li p { margin: 0; font-size: clamp(0.85rem, 1.5vw, 0.95rem); color: #4b5563; line-height: 1.5; grid-column: 2; }
+        @media (max-width: 768px) {
+            .prozess-grid { grid-template-columns: 1fr; }
+            .prozess-intro { position: static; }
+        }
     </style>
 </head>
 <body>
@@ -500,5 +515,21 @@
             </div>
         </div>
     </section>
+    <section class="prozess">
+        <div class="prozess-grid">
+            <div class="prozess-intro">
+                <h2>Wie sieht unser Prozess aus?</h2>
+                <p class="intro">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                <div class="button-container"><button>direkt eine Anfrage stellen</button></div>
+            </div>
+            <ol class="prozess-steps">
+                <li><span class="prozess-num" aria-hidden="true">1</span><h3>Aussuchen</h3><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p></li>
+                <li><span class="prozess-num" aria-hidden="true">2</span><h3>H3 Prozess</h3><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p></li>
+                <li><span class="prozess-num" aria-hidden="true">3</span><h3>H3 Prozess</h3><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p></li>
+                <li><span class="prozess-num" aria-hidden="true">4</span><h3>H3 Prozess</h3><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p></li>
+            </ol>
+        </div>
+    </section>
+    <section class="fehler" style="height: 100vh;"></section>
 </body>
 </html>
