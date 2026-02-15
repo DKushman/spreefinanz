@@ -50,6 +50,28 @@
             margin-inline: auto;
         }
         .main .heading { margin-bottom: clamp(1rem, 2vw, 2rem); }
+        .main {
+            opacity: 0;
+            animation: mainFadeIn 0.7s ease-out forwards;
+        }
+        .main .heading {
+            opacity: 0;
+            animation: mainFadeIn 0.5s ease-out 0.15s forwards;
+        }
+        .main .main-content {
+            opacity: 0;
+            animation: mainFadeIn 0.5s ease-out 0.3s forwards;
+        }
+        @keyframes mainFadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
         .main-content {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
@@ -238,11 +260,26 @@
             color: #4b5563;
             font-weight: 100;
         }
+        .zahlen-value-wrap {
+            overflow: hidden;
+            line-height: 1;
+
+        }
         .zahlen-value {
-            font-size: clamp(5rem, 5vw, 7rem);
+            font-size: clamp(5rem, 7vw, 10rem);
             color: #1f2937;
             font-weight: 700;
+            padding-bottom: 0.5rem;
+            display: block;
+            transform: translateY(100%);
+            transition: transform 0.6s ease-out;
         }
+        .zahlen.in-view .zahlen-value {
+            transform: translateY(0);
+        }
+        .zahlen.in-view .zahlen-list li:nth-child(1) .zahlen-value { transition-delay: 0.1s; }
+        .zahlen.in-view .zahlen-list li:nth-child(2) .zahlen-value { transition-delay: 0.25s; }
+        .zahlen.in-view .zahlen-list li:nth-child(3) .zahlen-value { transition-delay: 0.4s; }
         @media (max-width: 768px) {
             .zahlen-list {
                 grid-template-columns: 1fr;
@@ -391,14 +428,14 @@
         <section class="main">
             <h1 class="heading">Versicherungen<span>für Expats</span></h1>
             <div class="main-content">
-                <img src="images/pexels-mjlo-30709720_ergebnis.webp" alt="Desert path with buildings" width="300" height="400">
+                <img src="images/pexels-mjlo-30709720_ergebnis_ergebnis.webp" alt="Desert path with buildings" width="300" height="400">
                 <div class="text-block">
                     <p class="p-main">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidun</p>
                     <div class="button-container hero">
                         <button>oder direkt eine Anfrage stellen</button>
                     </div>
                 </div>
-                <img src="images/pexels-horacio-lander-1239977167-35578134_ergebnis.webp" alt="Church on hill with mountains" width="300" height="400">
+                <img src="images/pexels-horacio-lander-1239977167-35578134_ergebnis_ergebnis.webp" alt="Church on hill with mountains" width="300" height="400">
             </div>
         </section>
 
@@ -431,9 +468,9 @@
         <h2 class="zahlen-h2">Was ist mit inbegriffen?</h2>
         <p class="intro">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
         <ul class="zahlen-list">
-            <li><span class="zahlen-value">+180</span><span class="zahlen-label">Länder</span></li>
-            <li><span class="zahlen-value">+10M</span><span class="zahlen-label">Euro abgesichert</span></li>
-            <li><span class="zahlen-value">365</span><span class="zahlen-label">Tage Schutz</span></li>
+            <li><div class="zahlen-value-wrap"><span class="zahlen-value">+180</span></div><span class="zahlen-label">Länder</span></li>
+            <li><div class="zahlen-value-wrap"><span class="zahlen-value">+10M</span></div><span class="zahlen-label">Euro abgesichert</span></li>
+            <li><div class="zahlen-value-wrap"><span class="zahlen-value">365</span></div><span class="zahlen-label">Tage Schutz</span></li>
         </ul>
         <div class="button-container">
             <button>Erfahre die genauen Konditionen</button>
@@ -671,5 +708,17 @@
         </div>
     </section>
 </main>
+<script>
+(function () {
+    var section = document.querySelector('.zahlen');
+    if (!section) return;
+    var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+            if (entry.isIntersecting) entry.target.classList.add('in-view');
+        });
+    }, { threshold: 0.5 });
+    observer.observe(section);
+})();
+</script>
 </body>
 </html>
