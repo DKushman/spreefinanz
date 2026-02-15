@@ -355,6 +355,21 @@
         .faq-list summary::before { content: "+ "; }
         .faq-list details[open] summary::before { content: "− "; }
         .faq-list details p { margin: 0; padding: 0 clamp(1rem, 2.5vw, 1.25rem) clamp(1rem, 2.5vw, 1.25rem) clamp(1.25rem, 2.5vw, 1.5rem); font-size: clamp(0.85rem, 1.5vw, 0.95rem); color: #4b5563; line-height: 1.5; }
+
+        .interessanter { text-align: center; }
+        .interessanter-row { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: clamp(1rem, 2.5vw, 1.5rem); align-items: center; padding: clamp(1rem, 2.5vw, 1.5rem) 0; border-top: 1px solid #e5e7eb; min-width: 0; }
+        .interessanter-row:last-child { border-bottom: 1px solid #e5e7eb; }
+        .interessanter-num { font-size: clamp(2rem, 4vw, 3rem); font-weight: 700; color: #1f2937; text-align: left; margin-bottom: auto;}
+        .interessanter-content { grid-column: 2 / -1; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); gap: clamp(1rem, 2.5vw, 1.5rem); min-width: 0; }
+        .interessanter-content .img-wrap { width: 100%; min-width: 0; aspect-ratio: 4/3; border-radius: clamp(6px, 1.5vw, 8px); overflow: hidden; }
+        .interessanter-content .img-wrap img { width: 100%; height: 100%; min-width: 0; object-fit: cover; display: block; }
+        .interessanter-content h3 { font-size: clamp(1rem, 2vw, 1.2rem); font-weight: 700; color: #1f2937; margin: 0 0 0.5rem; text-align: left; }
+        .interessanter-content p { margin: 0; font-size: clamp(0.85rem, 1.5vw, 0.95rem); color: #4b5563; line-height: 1.5; text-align: left; }
+        @media (max-width: 768px) {
+            .interessanter-row { grid-template-columns: 1fr; }
+            .interessanter-content { grid-column: 1; grid-template-columns: 1fr; }
+            .interessanter-content .img-wrap { aspect-ratio: 4/3; max-height: clamp(200px, 50vw, 320px); }
+        }
     </style>
 </head>
 <body>
@@ -591,6 +606,48 @@
                 <summary>Im Auto unterwegs</summary>
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis.</p>
             </details>
+        </div>
+    </section>
+    <section class="interessanter">
+        <h2>Das könnte auch interessant für euch sein:</h2>
+        <p class="intro">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+        <div class="interessanter-list">
+            <div class="interessanter-row">
+                <span class="interessanter-num">(1)</span>
+                <div class="interessanter-content">
+                    <div class="img-wrap">
+                        <img src="images/pexels-horacio-lander-1239977167-35578134_ergebnis.webp" alt="" width="400" height="300" loading="lazy">
+                    </div>
+                    <div>
+                        <h3>Versicherungen für Expats</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="interessanter-row">
+                <span class="interessanter-num">(2)</span>
+                <div class="interessanter-content">
+                    <div class="img-wrap">
+                        <img src="images/pexels-horacio-lander-1239977167-35578134_ergebnis.webp" alt="" width="400" height="300" loading="lazy">
+                    </div>
+                    <div>
+                        <h3>Versicherungen für Expats</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="interessanter-row">
+                <span class="interessanter-num">(3)</span>
+                <div class="interessanter-content">
+                    <div class="img-wrap">
+                        <img src="images/pexels-horacio-lander-1239977167-35578134_ergebnis.webp" alt="" width="400" height="300" loading="lazy">
+                    </div>
+                    <div>
+                        <h3>Versicherungen für Expats</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 </body>
