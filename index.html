@@ -278,12 +278,13 @@
         .beispiele { text-align: center; }
         .beispiele-wrap { background: rgba(60, 104, 237, 0.1); border-radius: 12px; padding: clamp(1rem, 3vw, 1.5rem); margin-bottom: 1.5rem; }
         .beispiele-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(1rem, 2vw, 1.5rem); }
-        .beispiele-item h3 { font-size: clamp(1rem, 2vw, 1.15rem); font-weight: 700; color: #1f2937; margin-bottom: 0.5rem; text-align: left; }
-        .beispiele-item .img-wrap { position: relative; overflow: hidden; border-radius: 8px; aspect-ratio: 4/3; }
+        .beispiele-item h3 { font-size: clamp(1.5rem, 2vw, 2rem); font-weight: 700; color: #1f2937; text-align: center; margin: 0; padding-bottom: 0; margin-bottom: clamp(1rem, 2vw, 2rem);}
+        .beispiele-item .img-wrap { position: relative; overflow: hidden; border-radius: 8px; aspect-ratio: 4/3;}
+        .beispiele-item .img-inner { position: absolute; inset: 0; }
+        .beispiele-item .img-inner::after { content: ""; position: absolute; inset: 0; background: rgba(0,0,0,0.7); opacity: 0; transition: opacity 0.3s; }
         .beispiele-item .img-wrap img { width: 100%; height: 100%; object-fit: cover; display: block; }
-        .beispiele-item .img-wrap::after { content: ""; position: absolute; inset: 0; background: rgba(0,0,0,0.5); opacity: 0; transition: opacity 0.3s; }
-        .beispiele-item .img-wrap .hover-p { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; padding: 1rem; color: #fff; margin: 0; opacity: 0; transition: opacity 0.3s; font-size: 0.9rem; }
-        .beispiele-item .img-wrap:hover::after, .beispiele-item .img-wrap:hover .hover-p { opacity: 1; }
+        .beispiele-item .img-wrap .hover-p { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; padding: 1rem; color: #fff !important; margin: 0; opacity: 0; transition: opacity 0.3s; font-size: 0.9rem; pointer-events: none; }
+        .beispiele-item .img-wrap:hover .img-inner::after, .beispiele-item .img-wrap:hover .hover-p { opacity: 1; }
         @media (max-width: 768px) { .beispiele-grid { grid-template-columns: 1fr; } }
     </style>
 </head>
@@ -360,21 +361,27 @@
                 <div class="beispiele-item">
                     <h3>Vietnam</h3>
                     <div class="img-wrap">
-                        <img src="images/pexels-vietnamhiddenlight-32759677_ergebnis.webp" alt="Vietnam" width="400" height="300">
+                        <div class="img-inner">
+                            <img src="images/pexels-vietnamhiddenlight-32759677_ergebnis.webp" alt="Vietnam" width="400" height="300">
+                        </div>
                         <p class="hover-p">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
                     </div>
                 </div>
                 <div class="beispiele-item">
                     <h3>Jamaica</h3>
                     <div class="img-wrap">
-                        <img src="images/pexels-liam-gant-619294-31626238_ergebnis.webp" alt="Jamaica" width="400" height="300">
+                        <div class="img-inner">
+                            <img src="images/pexels-liam-gant-619294-31626238_ergebnis.webp" alt="Jamaica" width="400" height="300">
+                        </div>
                         <p class="hover-p">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
                     </div>
                 </div>
                 <div class="beispiele-item">
                     <h3>Singapur</h3>
                     <div class="img-wrap">
-                        <img src="images/pexels-mjlo-30709720_ergebnis.webp" alt="Singapur" width="400" height="300">
+                        <div class="img-inner">
+                            <img src="images/pexels-mjlo-30709720_ergebnis.webp" alt="Singapur" width="400" height="300">
+                        </div>
                         <p class="hover-p">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
                     </div>
                 </div>
