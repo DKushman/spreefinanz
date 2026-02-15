@@ -19,7 +19,7 @@
             overflow-x: hidden;
             min-width: 0;
         }
-        
+
         section {
             padding-block: clamp(2rem, 5vw, 4rem);
         }
@@ -165,7 +165,6 @@
             max-width: 42rem;
             margin: 0 auto 2.5rem;
             color: #4b5563;
-            font-size: clamp(0.9rem, 2vw, 1rem);
             text-align: center;
         }
         .worauf-achten .items {
@@ -204,8 +203,8 @@
         }
         p {
             color: #4b5563;
-            font-size: clamp(0.85rem, 1.5vw, 0.95rem);
-            line-height: 1.6;
+            font-size: clamp(0.9rem, 1.5vw, 1.2rem);
+            line-height: 1.5;
             margin-left: 3rem;
             padding-bottom: clamp(1rem, 2vw, 2rem);
             overflow-wrap: break-word;
@@ -286,6 +285,26 @@
         .beispiele-item .img-wrap .hover-p { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; padding: 1rem; color: #fff !important; margin: 0; opacity: 0; transition: opacity 0.3s; font-size: 0.9rem; pointer-events: none; }
         .beispiele-item .img-wrap:hover .img-inner::after, .beispiele-item .img-wrap:hover .hover-p { opacity: 1; }
         @media (max-width: 768px) { .beispiele-grid { grid-template-columns: 1fr; } }
+
+        .vorteile { text-align: center; }
+        .vorteile-grid { display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: 1fr 1fr; gap: clamp(0.75rem, 2vw, 1.25rem); min-width: 0; margin: 0; }
+        .vorteile-box:nth-child(1) { grid-column: 1; grid-row: 1; }
+        .vorteile-box:nth-child(2) { grid-column: 1; grid-row: 2; }
+        .vorteile-box:nth-child(4) { grid-column: 3; grid-row: 1; }
+        .vorteile-box:nth-child(5) { grid-column: 3; grid-row: 2; }
+        .vorteile-box { background: rgba(217, 217, 217, 0.4); border-radius: clamp(8px, 2vw, 12px); padding: clamp(0.75rem, 2vw, 1.25rem); display: flex; flex-direction: column; gap: 0.5rem; text-align: left; transition: background 0.2s; }
+        .vorteile-box:hover { background: rgba(217, 217, 217, 0.65); }
+        .vorteile-box .head { display: flex; align-items: center; gap: clamp(0.5rem, 1.5vw, 0.75rem); }
+        .vorteile-icon { width: clamp(2rem, 4vw, 2.5rem); height: clamp(2rem, 4vw, 2.5rem); border-radius: 20%; background: #3C68ED; color: #fff; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: clamp(0.85rem, 1.5vw, 1rem); }
+        .vorteile-box h3 { font-weight: 700; color: #1f2937; margin: 0; }
+        .vorteile-box p { margin: 0; color: #4b5563; line-height: 1.5; margin-top: auto;}
+        .vorteile-img { grid-column: 2; grid-row: 1 / -1; border-radius: clamp(8px, 2vw, 12px); overflow: hidden; min-height: 0; }
+        .vorteile-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+        @media (max-width: 768px) {
+            .vorteile-grid { grid-template-columns: 1fr; grid-template-rows: auto; }
+            .vorteile-box:nth-child(1), .vorteile-box:nth-child(2), .vorteile-box:nth-child(4), .vorteile-box:nth-child(5) { grid-column: 1; grid-row: auto; }
+            .vorteile-img { grid-column: 1; grid-row: auto; aspect-ratio: 16/10; }
+        }
     </style>
 </head>
 <body>
@@ -389,6 +408,31 @@
         </div>
         <div class="button-container">
             <button>Sag uns wohin du möchtest!</button>
+        </div>
+    </section>
+    <section class="vorteile">
+        <h2>Leistungen und Vorteile im Detail</h2>
+        <p class="intro">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+        <div class="vorteile-grid">
+            <div class="vorteile-box">
+                <div class="head"><span class="vorteile-icon" aria-hidden="true">○</span><h3>Betreuung</h3></div>
+                <p>Du bekommst richtig gute Betreuung bei Versicherungen – das ist klasse, da es nicht viele Unternehmen gibt, die sich darauf fokussieren. Dementsprechend sind wir immer ansprechbar.</p>
+            </div>
+            <div class="vorteile-box">
+                <div class="head"><span class="vorteile-icon" aria-hidden="true">□</span><h3>Transparenz</h3></div>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+            </div>
+            <div class="vorteile-img">
+                <img src="images/pexels-horacio-lander-1239977167-35578134_ergebnis.webp" alt="Stadtansicht" width="600" height="400" loading="lazy">
+            </div>
+            <div class="vorteile-box">
+                <div class="head"><span class="vorteile-icon" aria-hidden="true">↑</span><h3>Rundum-Schutz</h3></div>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+            </div>
+            <div class="vorteile-box">
+                <div class="head"><span class="vorteile-icon" aria-hidden="true">△</span><h3>Einfache Abwicklung</h3></div>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+            </div>
         </div>
     </section>
 </body>
