@@ -259,6 +259,13 @@
                 border-right: none;
             }
         }
+
+        .fuerwen { max-width: 42rem; margin-inline: auto; }
+        .fuerwen-list { list-style: none; padding: 0; margin: 0; }
+        .fuerwen-list li { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem; }
+        .fuerwen-icon { width: 2.25rem; height: 2.25rem; border-radius: 50%; background: #3C68ED; color: #fff; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 1.2rem; }
+        .fuerwen-box { flex: 1; min-width: 0; padding: 0.75rem 1rem; border: 2px solid #3C68ED; border-radius: 12px; color: #3C68ED; text-align: center; }
+        @media (max-width: 480px) { .fuerwen-list li { flex-direction: column; align-items: stretch; text-align: center; } }
     </style>
 </head>
 <body>
@@ -317,7 +324,14 @@
         </div>
     </section>
     <section class="fuerwen">
-        <h2>Für wen ist diese Versicherung geeignet?</h2>
+        <h2>Für wen ist die Versicherung geeignet?</h2>
+        <p class="intro">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+        <ul class="fuerwen-list">
+            <li><span class="fuerwen-icon" aria-hidden="true">✓</span><span class="fuerwen-box">Du bist 20-25 Jahre alt</span></li>
+            <li><span class="fuerwen-icon" aria-hidden="true">✓</span><span class="fuerwen-box">Du möchtest im Ausland überleben</span></li>
+            <li><span class="fuerwen-icon" aria-hidden="true">✓</span><span class="fuerwen-box">Du hasst Überraschungen</span></li>
+            <li><span class="fuerwen-icon" aria-hidden="true">✓</span><span class="fuerwen-box">H3 Beispiel für wen</span></li>
+        </ul>
     </section>
 </body>
 </html>
