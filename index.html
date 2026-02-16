@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Versicherungen für Expats</title>
+    <link rel="preload" href="images/pexels-mjlo-30709720_ergebnis_ergebnis.webp" as="image">
     <style>
 
         
@@ -121,8 +122,14 @@
             transition: background-color 0.2s;
         }
         
-        button:hover {
+        button:active {
             background-color: #2d5ad9;
+        }
+        
+        @media (hover: hover) {
+            button:hover {
+                background-color: #2d5ad9;
+            }
         }
     
         @media (max-width: 1100px) {
@@ -292,11 +299,18 @@
         .fuerwen-list li { display: flex; align-items: center; margin-bottom: 1rem; }
         .fuerwen-icon { width: 4rem; height: 4rem; border-radius: 50%; background: transparent; color: #3C68ED; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 1.2rem; border: 2px solid #3C68ED; transition: background-color 0.2s; transition: color 0.2s; }
         .fuerwen-box { flex: 1; min-width: 0; padding: 0.75rem 1rem; border: 2px solid #3C68ED; border-radius: 12px; color: #3C68ED; text-align: center; font-size: clamp(1rem, 1.5vw, 1rem); font-weight: 500;}
-        .fuerwen-icon:hover {
+        .fuerwen-icon:active {
             background: #2d5ad9;
             color: #fff;
-            transition: background-color 0.2s;
-            transition: color 0.2s;
+        }
+        
+        @media (hover: hover) {
+            .fuerwen-icon:hover {
+                background: #2d5ad9;
+                color: #fff;
+                transition: background-color 0.2s;
+                transition: color 0.2s;
+            }
         }
         @media (min-width: 769px) {
             .fuerwen-box { padding: 1rem 1.5rem; font-size: 1.15rem; }
@@ -311,7 +325,11 @@
         .beispiele-item .img-inner::after { content: ""; position: absolute; inset: 0; background: rgba(0,0,0,0.7); opacity: 0; transition: opacity 0.3s; }
         .beispiele-item .img-wrap img { width: 100%; height: 100%; object-fit: cover; display: block; }
         .beispiele-item .img-wrap .hover-p { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; padding: 1rem; color: #fff !important; margin: 0; opacity: 0; transition: opacity 0.3s; font-size: 0.9rem; pointer-events: none; }
-        .beispiele-item .img-wrap:hover .img-inner::after, .beispiele-item .img-wrap:hover .hover-p { opacity: 1; }
+        .beispiele-item .img-wrap:active .img-inner::after, .beispiele-item .img-wrap:active .hover-p { opacity: 1; }
+        
+        @media (hover: hover) {
+            .beispiele-item .img-wrap:hover .img-inner::after, .beispiele-item .img-wrap:hover .hover-p { opacity: 1; }
+        }
         @media (max-width: 768px) { .beispiele-grid { grid-template-columns: 1fr; } }
 
         .vorteile { text-align: center; }
@@ -321,7 +339,11 @@
         .vorteile-box:nth-child(4) { grid-column: 3; grid-row: 1; }
         .vorteile-box:nth-child(5) { grid-column: 3; grid-row: 2; }
         .vorteile-box { background: rgba(217, 217, 217, 0.4); border-radius: clamp(8px, 2vw, 12px); padding: clamp(0.75rem, 2vw, 1.25rem); display: flex; flex-direction: column; gap: 0.5rem; text-align: left; transition: background 0.2s; }
-        .vorteile-box:hover { background: rgba(217, 217, 217, 0.65); }
+        .vorteile-box:active { background: rgba(217, 217, 217, 0.65); }
+        
+        @media (hover: hover) {
+            .vorteile-box:hover { background: rgba(217, 217, 217, 0.65); }
+        }
         .vorteile-box .head { display: flex; align-items: center; gap: clamp(0.5rem, 1.5vw, 0.75rem); }
         .vorteile-icon { width: clamp(2rem, 4vw, 2.5rem); height: clamp(2rem, 4vw, 2.5rem); border-radius: 20%; background: #3C68ED; color: #fff; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: clamp(0.85rem, 1.5vw, 1rem); }
         .vorteile-box h3 { font-weight: 700; color: #1f2937; margin: 0; }
@@ -425,14 +447,14 @@
         <section class="main">
             <h1 class="heading">Versicherungen<span>für Expats</span></h1>
             <div class="main-content">
-                <img src="images/pexels-mjlo-30709720_ergebnis_ergebnis.webp" alt="Desert path with buildings" width="300" height="400">
+                <img src="images/pexels-mjlo-30709720_ergebnis_ergebnis.webp" alt="Desert path with buildings" width="300" height="400" fetchpriority="high" decoding="async">
                 <div class="text-block">
                     <p class="p-main">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidun</p>
                     <div class="button-container hero">
                         <button>oder direkt eine Anfrage stellen</button>
                     </div>
                 </div>
-                <img src="images/pexels-horacio-lander-1239977167-35578134_ergebnis_ergebnis.webp" alt="Church on hill with mountains" width="300" height="400">
+                <img src="images/pexels-horacio-lander-1239977167-35578134_ergebnis_ergebnis.webp" alt="Church on hill with mountains" width="300" height="400" decoding="async">
             </div>
         </section>
 
