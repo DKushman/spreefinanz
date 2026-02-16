@@ -17,10 +17,6 @@
     - HTML-Struktur und Semantik dürfen nicht geändert werden
     - ALLE KOMMENTARE müssen erhalten bleiben!  -->
     
-    ============================================
-    TITEL: STANDARDS-TEMPLATE - WIEDERVERWENDBARE STANDARD-SEKTIONEN
-    ============================================
--->
 
 <!-- ZAHLEN SECTION -->
 <!-- Überschrift -->
