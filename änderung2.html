@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Versicherungen für Expats</title>
+    <link rel="preload" href="images/pexels-mjlo-30709720_ergebnis_ergebnis.webp" as="image" fetchpriority="high">
+    <style>
+
+        
+        html {
+            overflow-x: clip;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: #fff;
+            padding: clamp(2rem, 5vw, 4rem) clamp(1rem, 5vw, 5rem);
+            line-height: 1.6;
+            padding-top: 0;
+            overflow-x: clip;
+            min-width: 0;
+        }
+
+        section {
+            padding-block: clamp(2rem, 5vw, 4rem);
+        }
+        h2 {
+            font-size: clamp(1.75rem, 4vw, 2.5rem);
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 1rem;
+            line-height: 1;
+            text-align: center;
+        }
+        h1 {
+            font-size: clamp(2.5rem, 6vw, 6rem);
+            font-weight: 700;
+            color: #3C68ED;
+            line-height: 1;
+            margin-bottom: clamp(1rem, 2vw, 2rem);
+            text-align: center;
+        }
+        
+        h1 span {
+            display: block;
+            color: #7F8AAA;
+            font-size: clamp(2.5rem, 7vw, 6rem);
+
+        }
+        .p-main {
+            margin-inline: auto;
+        }
+        .main .heading { margin-bottom: clamp(1rem, 2vw, 2rem); }
+        .main {
+            animation: mainFadeIn 0.25s ease-out both;
+        }
+        .main .heading {
+            animation: mainFadeIn 0.2s ease-out 0.05s both;
+        }
+        .main .main-content {
+            animation: mainFadeIn 0.2s ease-out 0.1s both;
+        }
+        @keyframes mainFadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(12px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .main-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+            gap: clamp(1rem, 2vw, 2rem);
+            align-items: flex-start;
+            min-width: 0;
+        }
+        .main-content img {
+            width: 100%;
+            max-width: 450px;
+            height: 100%;
+            aspect-ratio: 3 / 4;
+            border-radius: 8px;
+            object-fit: cover;
+            flex: 0 0 auto;
+            justify-self: center;
+        }
+
+        
+        .main-content .text-block {
+            flex: 1 1 min(300px, 100%);
+            min-width: 0;
+            color: #1f2937;
+            font-size: clamp(0.9rem, 2vw, 1rem);
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            height: 100%;
+        }
+        .button-container.hero {
+            margin-top: auto;
+            margin-bottom: 0;
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: auto;
+
+        }
+        
+        button {
+            background-color: #3C68ED;
+            color: #fff;
+            border: none;
+            padding: clamp(0.75rem, 2vw, 1rem) clamp(1.5rem, 4vw, 2.5rem);
+            font-size: clamp(0.9rem, 2vw, 1rem);
+            font-weight: 500;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        
+        button:active {
+            background-color: #2d5ad9;
+        }
+        
+        button:hover {
+            background-color: #2d5ad9;
+        }
+    
+        @media (max-width: 1100px) {
+            .main-content {
+                grid-template-columns: 1fr 1fr;
+                align-items: stretch;
+            }
+            .main-content .text-block {
+                grid-column: 1 / -1;
+                grid-row: 2;
+            }
+            .main-content img:last-child {
+                grid-column: 2;
+                grid-row: 1;
+            }
+            .main-content img {
+                max-width: 100%;
+                aspect-ratio: 3 / 4;
+            }
+        }
+
+        .logos {
+            --g: 2rem;
+            display: flex;
+            overflow: hidden;
+            gap: var(--g);
+            padding-block: clamp(2rem, 5vw, 4rem);
+            min-width: 0;
+            width: 100%;
+            max-width: 100%;
+        }
+        .logos > div {
+            flex-shrink: 0;
+            min-width: 100%;
+            display: flex;
+            gap: var(--g);
+            justify-content: space-around;
+            animation: scroll 30s linear infinite;
+        }
+        .logos span { font-size: 4rem; opacity: 0.7; }
+        @keyframes scroll { to { transform: translateX(calc(-100% - var(--g))); } }
+
+        .worauf-achten {
+            text-align: center;
+        }
+        .worauf-achten h2 {
+            font-size: clamp(1.75rem, 4vw, 2.5rem);
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+        .intro {
+            max-width: 42rem;
+            margin: 0 auto 2.5rem;
+            color: #4b5563;
+            text-align: center;
+        }
+        .worauf-achten .items {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: clamp(1.5rem, 3vw, 2.5rem);
+            text-align: left;
+            margin-bottom: clamp(2rem, 5vw, 4rem);
+            min-width: 0;
+        }
+        .worauf-achten .item {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+        .worauf-achten .item-num {
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 50%;
+            background: #e5e7eb;
+            color: #374151;
+            font-weight: 700;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        .worauf-achten h3 {
+            font-size: clamp(1rem, 2vw, 1.15rem);
+            font-weight: 700;
+            color: #1f2937;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        p {
+            color: #4b5563;
+            font-size: clamp(0.9rem, 1.5vw, 1.2rem);
+            line-height: 1.5;
+            margin-left: 3rem;
+            padding-bottom: clamp(1rem, 2vw, 2rem);
+            overflow-wrap: break-word;
+        }
+        .p-h3 {
+            font-size: clamp(0.6rem, 1.2vw, 0.9rem);
+            margin-left: 0;
+        }
+        .worauf-achten .cta { margin-top: 0.5rem; }
+        @media (max-width: 768px) {
+            .worauf-achten .items { grid-template-columns: 1fr; }
+            .worauf-achten .item p { margin-left: 0; }
+        }
+
+        .zahlen-h2 {
+            text-align: center;
+        }
+        .zahlen-list {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: clamp(1rem, 2vw, 2rem);
+            text-align: center;
+            padding: 0;
+            margin-bottom: clamp(2rem, 5vw, 4rem);
+        }
+        .zahlen-list li {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .zahlen-list li:nth-child(2) {
+            border-left: 1px solid #e5e7eb;
+            border-right: 1px solid #e5e7eb;
+        }
+        .zahlen-label {
+            font-size: clamp(1rem, 1.5vw, 1rem);
+            color: #4b5563;
+            font-weight: 100;
+        }
+        .zahlen-value-wrap {
+            overflow: hidden;
+            line-height: 1;
+
+        }
+        .zahlen-value {
+            font-size: clamp(5rem, 7vw, 10rem);
+            color: #1f2937;
+            font-weight: 700;
+            padding-bottom: 0.5rem;
+            display: block;
+            transform: translateY(100%);
+            transition: transform 0.6s ease-out;
+        }
+        .zahlen.in-view .zahlen-value {
+            transform: translateY(0);
+        }
+        .zahlen.in-view .zahlen-list li:nth-child(1) .zahlen-value { transition-delay: 0.1s; }
+        .zahlen.in-view .zahlen-list li:nth-child(2) .zahlen-value { transition-delay: 0.25s; }
+        .zahlen.in-view .zahlen-list li:nth-child(3) .zahlen-value { transition-delay: 0.4s; }
+        @media (max-width: 768px) {
+            .zahlen-list {
+                grid-template-columns: 1fr;
+            }
+            .zahlen-list li:nth-child(2) {
+                border-left: none;
+                border-right: none;
+            }
+        }
+
+        .fuerwen { max-width: 42rem; margin-inline: auto; }
+        .fuerwen-list { list-style: none; padding: 0; margin: 0; }
+        .fuerwen-list li { display: flex; align-items: center; margin-bottom: 1rem; pointer-events: none; }
+        .fuerwen-list li > * { pointer-events: auto; }
+        .fuerwen-icon { width: 4rem; height: 4rem; border-radius: 50%; background: transparent; color: #3C68ED; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 1.2rem; border: 2px solid #3C68ED; transition: background-color 0.2s, color 0.2s; cursor: pointer; position: relative; pointer-events: auto; -webkit-tap-highlight-color: transparent; user-select: none; -webkit-user-select: none; touch-action: manipulation; }
+        .fuerwen-box { flex: 1; min-width: 0; padding: 0.75rem 1rem; border: 2px solid #3C68ED; border-radius: 12px; color: #3C68ED; text-align: center; font-size: clamp(1rem, 1.5vw, 1rem); font-weight: 500;}
+        .fuerwen-icon:active {
+            background: #2d5ad9;
+            color: #fff;
+        }
+        
+        .fuerwen-icon:hover,
+        .fuerwen-icon:focus {
+            background: #2d5ad9;
+            color: #fff;
+            outline: 2px solid #2d5ad9;
+            outline-offset: 2px;
+        }
+        .fuerwen-icon:focus:not(:focus-visible) {
+            outline: none;
+        }
+        @media (min-width: 769px) {
+            .fuerwen-box { padding: 1rem 1.5rem; font-size: 1.15rem; }
+        }
+
+        .beispiele { text-align: center; }
+        .beispiele-wrap { background: rgba(60, 104, 237, 0.1); border-radius: 12px; padding: clamp(1rem, 3vw, 1.5rem); margin-bottom: 1.5rem; }
+        .beispiele-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(1rem, 2vw, 1.5rem); }
+        .beispiele-item h3 { font-size: clamp(1.5rem, 2vw, 2rem); font-weight: 700; color: #1f2937; text-align: center; margin: 0; padding-bottom: 0; margin-bottom: clamp(1rem, 2vw, 2rem);}
+        .beispiele-item .img-wrap { position: relative; overflow: hidden; border-radius: 8px; aspect-ratio: 4/3; cursor: pointer; pointer-events: auto; -webkit-tap-highlight-color: transparent; user-select: none; -webkit-user-select: none; touch-action: manipulation; }
+        .beispiele-item .img-wrap::before { content: ""; position: absolute; inset: 0; background: rgba(0,0,0,0.7); opacity: 0; transition: opacity 0.3s; pointer-events: none; z-index: 1; }
+        .beispiele-item .img-wrap img { width: 100%; height: 100%; object-fit: cover; display: block; pointer-events: none; }
+        .beispiele-item .img-wrap .hover-p { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; padding: 1rem; color: #fff !important; margin: 0; opacity: 0; transition: opacity 0.3s; font-size: 0.9rem; pointer-events: none; z-index: 2; }
+        .beispiele-item .img-wrap:active::before, .beispiele-item .img-wrap:active .hover-p,
+        .beispiele-item .img-wrap:focus::before, .beispiele-item .img-wrap:focus .hover-p { opacity: 1; }
+        
+        .beispiele-item .img-wrap:hover::before, .beispiele-item .img-wrap:hover .hover-p { opacity: 1; }
+        @media (max-width: 768px) { .beispiele-grid { grid-template-columns: 1fr; } }
+
+        .vorteile { text-align: center; }
+        .vorteile-grid { display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: 1fr 1fr; gap: clamp(0.75rem, 2vw, 1.25rem); min-width: 0; margin: 0; }
+        .vorteile-box:nth-child(1) { grid-column: 1; grid-row: 1; }
+        .vorteile-box:nth-child(2) { grid-column: 1; grid-row: 2; }
+        .vorteile-box:nth-child(4) { grid-column: 3; grid-row: 1; }
+        .vorteile-box:nth-child(5) { grid-column: 3; grid-row: 2; }
+        .vorteile-box { background: rgba(217, 217, 217, 0.4); border-radius: clamp(8px, 2vw, 12px); padding: clamp(0.75rem, 2vw, 1.25rem); display: flex; flex-direction: column; gap: 0.5rem; text-align: left; transition: background 0.2s; cursor: pointer; position: relative; }
+        .vorteile-box:active { background: rgba(217, 217, 217, 0.65); }
+        
+        .vorteile-box:hover { background: rgba(217, 217, 217, 0.65); }
+        .vorteile-box .head { display: flex; align-items: center; gap: clamp(0.5rem, 1.5vw, 0.75rem); }
+        .vorteile-icon { width: clamp(2rem, 4vw, 2.5rem); height: clamp(2rem, 4vw, 2.5rem); border-radius: 20%; background: #3C68ED; color: #fff; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: clamp(0.85rem, 1.5vw, 1rem); }
+        .vorteile-box h3 { font-weight: 700; color: #1f2937; margin: 0; }
+        .vorteile-box p { margin: 0; color: #4b5563; line-height: 1.5; margin-top: auto;}
+        .vorteile-img { grid-column: 2; grid-row: 1 / -1; border-radius: clamp(8px, 2vw, 12px); overflow: hidden; min-height: 0; }
+        .vorteile-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+        @media (max-width: 768px) {
+            .vorteile-grid { grid-template-columns: 1fr; grid-template-rows: auto; }
+            .vorteile-box:nth-child(1), .vorteile-box:nth-child(2), .vorteile-box:nth-child(4), .vorteile-box:nth-child(5) { grid-column: 1; grid-row: auto; }
+            .vorteile-img { grid-column: 1; grid-row: auto; aspect-ratio: 16/10; }
+        }
+
+        .warumwir { text-align: center; }
+        .warumwir-grid { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: repeat(4, auto); gap: clamp(1rem, 2vw, 1.5rem); max-width: 70rem; margin-inline: auto; min-width: 0; }
+        .warumwir-img { border-radius: clamp(8px, 2vw, 12px); overflow: hidden; max-height: clamp(280px, 42vh, 380px); aspect-ratio: 4/3; }
+        .warumwir-img img { width: 100%; height: 100%; object-fit: cover; display: block; object-position: top center;}
+        .warumwir-text { text-align: left; display: flex; flex-direction: column; }
+        .warumwir-text .warumwir-content { margin-block: auto; display: flex; flex-direction: column; gap: clamp(0.5rem, 1vw, 0.75rem); }
+        .warumwir-text .warumwir-content h3 { font-size: clamp(1.5rem, 2vw, 2rem); font-weight: 700; color: #1f2937; margin: 0; line-height: 1.2; }
+        .warumwir-text .warumwir-content h3 .h3-blue { color: #3C68ED; }
+        .warumwir-text .warumwir-content p { margin: 0; font-size: clamp(0.85rem, 1.5vw, 0.95rem); color: #4b5563; line-height: 1.5; }
+        .warumwir-text .warumwir-content .button-container { justify-content: flex-start; margin-top: 0.25rem; }
+        @media (max-width: 768px) {
+            .warumwir-grid { grid-template-columns: 1fr; }
+            .warumwir-img { max-height: clamp(240px, 45vh, 320px); width: 100%; }
+            .warumwir-grid > *:nth-child(3) { order: 4; }
+            .warumwir-grid > *:nth-child(4) { order: 3; }
+            .warumwir-grid > *:nth-child(7) { order: 8; }
+            .warumwir-grid > *:nth-child(8) { order: 7; }
+        }
+
+        .prozess { display: flex; justify-content: center; }
+        .prozess-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(3rem, 8vw, 5rem); align-items: start; min-width: 0; width: 100%; max-width: 100%; }
+        .prozess-grid > .prozess-intro { align-self: stretch; }
+        .prozess-intro { position: sticky; top: 30vh; margin-bottom: auto; }
+        .prozess-intro .button-container { justify-content: center; }
+        .prozess-steps { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: clamp(1.25rem, 3vw, 2rem); justify-content: center; align-items: center; }
+        .prozess-steps li { display: grid; grid-template-columns: auto 1fr; grid-template-rows: auto auto; column-gap: clamp(0.75rem, 2vw, 1rem); row-gap: 0.25rem; max-width: 30rem;}
+        .prozess-num { grid-row: 1 / -1; width: clamp(2.25rem, 4vw, 2.75rem); height: clamp(2.25rem, 4vw, 2.75rem); border: 2px solid #3C68ED; border-radius: clamp(6px, 1.5vw, 10px); color: #3C68ED; font-weight: 700; font-size: clamp(0.95rem, 1.5vw, 1.1rem); display: flex; align-items: center; justify-content: center; }
+        .prozess-steps h3 { font-size: clamp(1rem, 2vw, 1.15rem); font-weight: 700; color: #1f2937; margin: 0; grid-column: 2; }
+        .prozess-steps li p { margin: 0; font-size: clamp(0.85rem, 1.5vw, 0.95rem); color: #4b5563; line-height: 1.5; grid-column: 2; }
+        @media (max-width: 768px) {
+            .prozess-grid { grid-template-columns: 1fr; }
+            .prozess-intro { position: static; }
+        }
+
+        .fehler { text-align: center; }
+        .fehler-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(1rem, 2vw, 1.5rem); margin-inline: auto; margin-bottom: clamp(1.5rem, 3vw, 2rem); min-width: 0; }
+        .fehler-card { background: rgba(181, 46, 48, 0.1); border-radius: clamp(8px, 2vw, 12px); padding: clamp(1rem, 2.5vw, 1.5rem); text-align: left; }
+        .fehler-card h3 { font-size: clamp(1rem, 2vw, 1.2rem); font-weight: 700; color: #B52E30; margin: 0 0 clamp(0.5rem, 1vw, 0.75rem); }
+        .fehler-card p { margin: 0; font-size: clamp(0.85rem, 1.5vw, 0.95rem); color: #4b5563; line-height: 1.5; }
+        @media (max-width: 768px) { .fehler-grid { grid-template-columns: 1fr; } }
+
+        .faq { text-align: center;  margin-inline: auto; }
+        .faq-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: clamp(0.5rem, 1.5vw, 0.75rem); }
+        .faq-list details { background: #eee; border-radius: clamp(6px, 1.5vw, 10px); padding: 0; overflow: hidden; text-align: left;}
+        .faq-list summary { padding: clamp(0.75rem, 2vw, 1rem) clamp(1rem, 2.5vw, 1.25rem); font-size: clamp(0.95rem, 1.8vw, 1.1rem); font-weight: 700; color: #1f2937; cursor: pointer; list-style: none; }
+        .faq-list summary::-webkit-details-marker { display: none; }
+        .faq-list summary::before { content: "+ "; }
+        .faq-list details[open] summary::before { content: "− "; }
+        .faq-list details p { margin: 0; padding: 0 clamp(1rem, 2.5vw, 1.25rem) clamp(1rem, 2.5vw, 1.25rem) clamp(1.25rem, 2.5vw, 1.5rem); font-size: clamp(0.85rem, 1.5vw, 0.95rem); color: #4b5563; line-height: 1.5; }
+
+        .interessanter { text-align: center; }
+        .interessanter-row { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: clamp(1rem, 2.5vw, 1.5rem); align-items: center; padding: clamp(1rem, 2.5vw, 1.5rem) 0; border-top: 1px solid #e5e7eb; min-width: 0; background-color: #ffffff;}
+        .interessanter-row:last-child { border-bottom: 1px solid #e5e7eb; }
+        .interessanter-num { font-size: clamp(2rem, 4vw, 3rem); font-weight: 700; color: #1f2937; text-align: left; margin-bottom: auto;}
+        .interessanter-content { grid-column: 2 / -1; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); gap: clamp(1rem, 2.5vw, 1.5rem); min-width: 0; }
+        .interessanter-content .img-wrap { width: 100%; min-width: 0; aspect-ratio: 4/3; border-radius: clamp(6px, 1.5vw, 8px); overflow: hidden; }
+        .interessanter-content .img-wrap img { width: 100%; height: 100%; min-width: 0; object-fit: cover; display: block; }
+        .interessanter-content h3 { font-size: clamp(1rem, 2vw, 1.2rem); font-weight: 700; color: #1f2937; margin: 0 0 0.5rem; text-align: left; }
+        .interessanter-content p { margin: 0; font-size: clamp(0.85rem, 1.5vw, 0.95rem); color: #4b5563; line-height: 1.5; text-align: left; }
+        @media (max-width: 768px) {
+            .interessanter-row { grid-template-columns: 1fr; }
+            .interessanter-content { grid-column: 1; grid-template-columns: 1fr; }
+            .interessanter-content .img-wrap { aspect-ratio: 4/3; max-height: clamp(200px, 50vw, 320px); }
+        }
+        .interessanter-row:nth-child(1){
+            position: sticky;
+            top: 10vh;
+        }
+        .interessanter-row:nth-child(2){
+            position: sticky;
+            top: 10vh;
+            z-index: 1;
+        }
+        .interessanter-row:nth-child(3){
+            position: sticky;
+            top: 10vh;
+            z-index: 2;
+        }
+
+        .cta { text-align: center; }
+        .cta-box { background: rgba(46, 80, 181, 0.1); border-radius: clamp(10px, 2.5vw, 16px); padding: clamp(1.5rem, 4vw, 2.5rem);}
+        .cta-icon { display: block; width: clamp(2.5rem, 6vw, 3.5rem); height: clamp(2.5rem, 6vw, 3.5rem); margin: 0 auto clamp(0.75rem, 2vw, 1rem); color: #2E50B5; }
+        .cta-box h2 { color: #2E50B5; margin-bottom: clamp(0.5rem, 1vw, 0.75rem); }
+        .cta-box p { margin: 0 0 clamp(1rem, 2vw, 1.25rem); color: #4b5563; font-size: clamp(0.9rem, 1.5vw, 1rem); }
+    </style>
+</head>
+<body>
+    <main>
+        <section class="main">
+            <h1 class="heading">Versicherungen <span>für Expats im Ausland</span></h1>
+            <div class="main-content">
+                <img src="images/pexels-mjlo-30709720_ergebnis_ergebnis.webp" alt="Desert path with buildings" width="300" height="400" fetchpriority="high" decoding="sync">
+                <div class="text-block">
+                    <p class="p-main">Wer im Ausland lebt oder arbeitet, benötigt eine maßgeschneiderte Versicherung für Expats. Ob internationale Krankenversicherung, Haftpflichtschutz oder langfristige Absicherung bei einer späteren Rückkehr nach Deutschland – wir sorgen dafür, dass du weltweit optimal abgesichert bist. Unsere Lösungen richten sich an Auswanderer, digitale Nomaden, Geschäftsreisende und Personen mit langfristigem Auslandsaufenthalt.</p>
+                    <div class="button-container hero">
+                        <button>oder direkt eine Anfrage stellen</button>
+                    </div>
+                </div>
+                <img src="images/pexels-horacio-lander-1239977167-35578134_ergebnis_ergebnis.webp" alt="Church on hill with mountains" width="300" height="400" loading="lazy" decoding="async">
+            </div>
+        </section>
+
+    <div class="logos">
+        <div><span>◆</span><span>★</span><span>●</span><span>▲</span><span>■</span><span>♦</span></div>
+        <div aria-hidden="true"><span>◆</span><span>★</span><span>●</span><span>▲</span><span>■</span><span>♦</span></div>
+    </div>
+    <section class="worauf-achten">
+        <h2>Worauf solltest du bei einer Auslandsversicherung achten?</h2>
+        <p class="intro">Eine gute Auslandskrankenversicherung bietet mehr als nur Notfallschutz. Entscheidend sind weltweite Gültigkeit, flexible Vertragslaufzeiten und umfassende Leistungen im Krankheits- oder Schadensfall.</p>
+        <div class="items">
+            <div class="item">
+                <p class="p-h3">Achte auf eine leistungsstarke internationale Krankenversicherung mit freier Arztwahl, stationärer und ambulanter Behandlung, Medikamentenübernahme sowie einem medizinisch sinnvollen Rücktransport nach Deutschland. Prüfe außerdem Selbstbeteiligung, Leistungsgrenzen und mögliche Wartezeiten.</p>
+            </div>
+            <div class="item">
+                <h3><span class="item-num">02</span> Gesetzliche Anforderungen im Gastland</h3>
+                <p class="p-h3">Viele Länder verlangen eine gültige Krankenversicherung als Voraussetzung für Visum oder Aufenthaltserlaubnis. Deine Expat-Versicherung sollte daher offiziell anerkannt sein und die jeweiligen Mindestanforderungen erfüllen.</p>
+            </div>
+            <div class="item">
+                <h3><span class="item-num">03</span> Planung bei Rückkehr nach Deutschland</h3>
+                <p class="p-h3">Denke langfristig: Gute Auslandversicherungen ermöglichen eine unkomplizierte Rückkehr ins deutsche Versicherungssystem oder einen Wechsel in ein anderes Land – ideal für flexible Lebensmodelle.</p>
+            </div>
+        </div>
+        <div class="button-container cta">
+            <button>Hast du noch Fragen?</button>
+        </div>
+    </section>
+    <section class="zahlen">
+        <h2 class="zahlen-h2">Was ist in unserer Auslandsversicherung enthalten?</h2>
+        <p class="intro">Unsere internationale Expat-Versicherung bietet dir weltweit umfassenden Schutz – flexibel, transparent und auf langfristige Auslandsaufenthalte ausgelegt. Egal ob du auswandern, remote arbeiten oder mehrere Jahre im Ausland leben möchtest.</p>
+        <ul class="zahlen-list">
+            <li><div class="zahlen-value-wrap"><span class="zahlen-value">180+</span></div><span class="zahlen-label">Länder weltweit versicherbar</span></li>
+            <li><div class="zahlen-value-wrap"><span class="zahlen-value">Bis 1 Mio. €</span></div><span class="zahlen-label">Deckungssumme pro Versicherungsfall</span></li>
+            <li><div class="zahlen-value-wrap"><span class="zahlen-value">365</span></div><span class="zahlen-label">Tage im Jahr weltweiter Schutz</span></li>
+        </ul>
+        <div class="button-container">
+            <button>Erfahre die genauen Konditionen</button>
+        </div>
+    </section>
+    <section class="fuerwen">
+        <h2>Für wen ist die Versicherung geeignet?</h2>
+        <p class="intro">Unsere Auslandskranken- und Expat-Versicherung richtet sich an Menschen, die langfristig außerhalb Deutschlands leben oder arbeiten und eine rechtssichere sowie leistungsstarke Absicherung benötigen.</p>
+        <ul class="fuerwen-list">
+            <li><span class="fuerwen-icon" tabindex="0" role="button" aria-label="Klickbar">✓</span><span class="fuerwen-box">Auswanderer & Expats mit langfristigem Aufenthalt</span></li>
+            <li><span class="fuerwen-icon" tabindex="0" role="button" aria-label="Klickbar">✓</span><span class="fuerwen-box">Digitale Nomaden & Remote-Arbeitende</span></li>
+            <li><span class="fuerwen-icon" tabindex="0" role="button" aria-label="Klickbar">✓</span><span class="fuerwen-box">Selbstständige & Unternehmer im Ausland</span></li>
+            <li><span class="fuerwen-icon" tabindex="0" role="button" aria-label="Klickbar">✓</span><span class="fuerwen-box">Angestellte mit internationalem Arbeitsvertrag</span></li>
+        </ul>
+    </section>
+    <section class="beispiele">
+        <h2>Beliebte Zielländer unserer Kunden</h2>
+        <p class="intro">Unsere Kunden leben weltweit. Hier sind einige der Länder, für die besonders häufig eine internationale Krankenversicherung abgeschlossen wird.</p>
+        <div class="beispiele-wrap">
+            <div class="beispiele-grid">
+                <div class="beispiele-item">
+                    <h3>Vietnam</h3>
+                    <div class="img-wrap" tabindex="0" role="button" aria-label="Vietnam Details">
+                        <img src="images/pexels-vietnamhiddenlight-32759677_ergebnis.webp" alt="Vietnam" width="400" height="300" loading="lazy">
+                        <p class="hover-p">Ideal für digitale Nomaden und Langzeitreisende. Eine private Auslandskrankenversicherung schützt dich vor hohen Behandlungskosten in internationalen Kliniken.</p>
+                    </div>
+                </div>
+                <div class="beispiele-item">
+                    <h3>Jamaika</h3>
+                    <div class="img-wrap" tabindex="0" role="button" aria-label="Jamaica Details">
+                        <img src="images/pexels-liam-gant-619294-31626238_ergebnis.webp" alt="Jamaica" width="400" height="300" loading="lazy">
+                        <p class="hover-p">Besonders bei Selbstständigen und Auswanderern beliebt. Wichtig ist hier eine Police mit Rücktransport und stationärer Versorgung.</p>
+                    </div>
+                </div>
+                <div class="beispiele-item">
+                    <h3>Singapur</h3>
+                    <div class="img-wrap" tabindex="0" role="button" aria-label="Singapur Details">
+                        <img src="images/pexels-mjlo-30709720_ergebnis.webp" alt="Singapur" width="400" height="300" loading="lazy">
+                        <p class="hover-p">Einer der teuersten Gesundheitsmärkte weltweit. Eine leistungsstarke Expat-Versicherung ist hier essenziell.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="button-container">
+            <button>Sag uns wohin du möchtest!</button>
+        </div>
+    </section>
+    <section class="vorteile">
+        <h2>Leistungen und Vorteile im Detail</h2>
+        <p class="intro">Moderne Expat-Versicherungen kombinieren umfassenden Gesundheitsschutz mit flexiblen Zusatzleistungen für langfristige Auslandsaufenthalte.</p>
+        <div class="vorteile-grid">
+            <div class="vorteile-box">
+                <div class="head"><span class="vorteile-icon" aria-hidden="true">○</span><h3>Persönliche Betreuung weltweit</h3></div>
+                <p>Du erhältst individuelle Beratung durch Experten für internationale Versicherungen. Wir analysieren deine Lebenssituation im Ausland und finden eine Lösung, die exakt zu deinem Aufenthaltsland und deiner Aufenthaltsdauer passt.</p>
+            </div>
+            <div class="vorteile-box">
+                <div class="head"><span class="vorteile-icon" aria-hidden="true">□</span><h3>Transparente Tarife ohne versteckte Kosten</h3></div>
+                <p>Klare Vertragsbedingungen und nachvollziehbare Beiträge sorgen für volle Kostentransparenz. Du weißt jederzeit genau, welche Leistungen deine Auslandskrankenversicherung abdeckt.</p>
+            </div>
+            <div class="vorteile-img">
+                <img src="images/pexels-horacio-lander-1239977167-35578134_ergebnis.webp" alt="Stadtansicht" width="600" height="400" loading="lazy">
+            </div>
+            <div class="vorteile-box">
+                <div class="head"><span class="vorteile-icon" aria-hidden="true">↑</span><h3>Individuell erweiterbarer Rundum-Schutz</h3></div>
+                <p>Ergänze deine internationale Krankenversicherung bei Bedarf um Haftpflicht-, Rechtsschutz- oder Berufsunfähigkeitsabsicherung im Ausland.</p>
+            </div>
+            <div class="vorteile-box">
+                <div class="head"><span class="vorteile-icon" aria-hidden="true">△</span><h3>Digitale und schnelle Abwicklung</h3></div>
+                <p>Antragstellung, Vertragsverwaltung und Schadensmeldung erfolgen bequem online. Rechnungen können digital eingereicht werden, Erstattungen erfolgen schnell und weltweit zuverlässig.</p>
+            </div>
+        </div>
+    </section>
+    <section class="warumwir">
+        <h2>Warum über uns absichern?</h2>
+        <p class="intro">Wir sind spezialisiert auf internationale Versicherungen und begleiten dich von der Auswahl bis zur langfristigen Betreuung – transparent, persönlich und zuverlässig.</p>
+        <div class="warumwir-grid">
+            <div class="warumwir-img">
+                <img src="images/contactphoto_ergebnis.webp" alt="" width="400" height="300" loading="lazy">
+            </div>
+            <div class="warumwir-text">
+                <div class="warumwir-content">
+                    <h3>Wir sind immer<br><span class="h3-blue">erreichbar</span></h3>
+                    <p>Persönliche Ansprechpartner statt anonymer Hotline. Wir unterstützen dich vor, während und nach deinem Auslandsaufenthalt.</p>
+                    <div class="button-container"><button>direkt eine Anfrage stellen</button></div>
+                </div>
+            </div>
+            <div class="warumwir-text">
+                <div class="warumwir-content">
+                    <h3>Wir beraten <br><span class="h3-blue">unabhängig</span></h3>
+                    <p>Wir vergleichen internationale Anbieter und finden die Lösung, die optimal zu deinem Aufenthaltsland und deinem Budget passt.</p>
+                    <div class="button-container"><button>direkt eine Anfrage stellen</button></div>
+                </div>
+            </div>
+            <div class="warumwir-img">
+                <img src="images/pexels-cytonn-955400_ergebnis.webp" alt="" width="400" height="300" loading="lazy">
+            </div>
+            <div class="warumwir-img">
+                <img src="images/pexels-pixabay-47047_ergebnis.webp" alt="" width="400" height="300" loading="lazy">
+            </div>
+            <div class="warumwir-text">
+                <div class="warumwir-content">
+                    <h3>Wir denken <br><span class="h3-blue">langfristig</span></h3>
+                    <p>Unsere Konzepte berücksichtigen Rückkehr nach Deutschland, Länderwechsel und flexible Lebensmodelle.</p>
+                    <div class="button-container"><button>direkt eine Anfrage stellen</button></div>
+                </div>
+            </div>
+            <div class="warumwir-text">
+                <div class="warumwir-content">
+                    <h3>Wir arbeiten <br><span class="h3-blue">transparent</span></h3>
+                    <p>Klare Leistungen, nachvollziehbare Beiträge und keine versteckten Klauseln – damit du jederzeit Planungssicherheit hast.</p>
+                    <div class="button-container"><button>direkt eine Anfrage stellen</button></div>
+                </div>
+            </div>
+            <div class="warumwir-img">
+                <img src="images/pexels-vlad-deep-29415806-10341357_ergebnis.webp" alt="" width="400" height="300" loading="lazy">
+            </div>
+        </div>
+    </section>
+    <section class="prozess">
+        <div class="prozess-grid">
+            <div class="prozess-intro">
+                <h2>Wie läuft die Absicherung ab?</h2>
+                <p class="intro">In nur wenigen Schritten erhältst du deine individuelle Auslandskrankenversicherung – digital, effizient und rechtssicher.</p>
+                <div class="button-container"><button>direkt eine Anfrage stellen</button></div>
+            </div>
+            <ol class="prozess-steps">
+                <li><span class="prozess-num" aria-hidden="true">1</span><h3>Bedarf analysieren</h3><p>Wir prüfen dein Zielland, deine Aufenthaltsdauer, berufliche Situation und individuelle Anforderungen.</p></li>
+                <li><span class="prozess-num" aria-hidden="true">2</span><h3>Passende Tarife vergleichen</h3><p>Auf Basis deiner Angaben vergleichen wir internationale Versicherer und zeigen dir transparente Optionen.</p></li>
+                <li><span class="prozess-num" aria-hidden="true">3</span><h3>Antrag digital abschließen</h3><p>Der Abschluss erfolgt unkompliziert online – schnell und ohne unnötige Bürokratie.</p></li>
+                <li><span class="prozess-num" aria-hidden="true">4</span><h3>Langfristige Betreuung</h3><p>Auch nach Vertragsabschluss bleiben wir dein Ansprechpartner bei Fragen, Leistungsfällen oder Anpassungen.</p></li>
+            </ol>
+        </div>
+    </section>
+    <section class="fehler">
+        <h2>Welche Fehler solltest du vermeiden?</h2>
+        <p class="intro">Bei der Auswahl einer Versicherung im Ausland werden häufig wichtige Details übersehen – das kann im Ernstfall hohe Kosten verursachen.</p>
+        <div class="fehler-grid">
+            <div class="fehler-card">
+                <h3>Nur auf den günstigsten Preis achten</h3>
+                <p>Niedrige Beiträge bedeuten oft eingeschränkte Leistungen oder hohe Selbstbeteiligungen. Entscheidend ist ein ausgewogenes Verhältnis zwischen Beitrag und Leistungsumfang.</p>
+            </div>
+            <div class="fehler-card">
+                <h3>Reiseversicherung mit Expat-Versicherung verwechseln</h3>
+                <p>Eine klassische Reiseversicherung ist meist nur für kurzfristige Aufenthalte gedacht. Für längere Auslandsaufenthalte benötigst du eine vollwertige internationale Krankenversicherung.</p>
+            </div>
+            <div class="fehler-card">
+                <h3>Fehlender Rücktransport-Schutz</h3>
+                <p>Ein medizinisch sinnvoller Rücktransport kann mehrere zehntausend Euro kosten. Stelle sicher, dass deine Police diese Leistung ausdrücklich beinhaltet.</p>
+            </div>
+        </div>
+        <div class="button-container">
+            <button>direkt eine Anfrage stellen</button>
+        </div>
+    </section>
+    <section class="faq">
+        <h2>Eure häufigsten Fragen zur Auslandsversicherung</h2>
+        <p class="intro">Hier beantworten wir zentrale Fragen rund um Auslandskrankenversicherung, Expat-Versicherung und internationale Absicherung.</p>
+        <div class="faq-list">
+            <details>
+                <summary>Was ist der Unterschied zwischen Reiseversicherung und Expat-Versicherung?</summary>
+                <p>Eine Reiseversicherung deckt in der Regel nur Notfälle bei kurzfristigen Aufenthalten ab. Eine Expat-Versicherung bietet umfassenden Krankenversicherungsschutz für langfristige Auslandsaufenthalte inklusive Vorsorgeleistungen.</p>
+            </details>
+            <details>
+                <summary>Ist eine Auslandskrankenversicherung für ein Visum erforderlich?</summary>
+                <p>In vielen Ländern ist eine gültige Krankenversicherung Voraussetzung für die Erteilung eines Visums. Die Police muss bestimmte Mindestleistungen erfüllen und offiziell anerkannt sein.</p>
+            </details>
+            <details>
+                <summary>Kann ich meine deutsche Krankenversicherung im Ausland behalten?</summary>
+                <p>Das hängt von Dauer und Aufenthaltsland ab. Bei längeren Aufenthalten außerhalb der EU ist meist eine spezielle internationale Krankenversicherung notwendig.</p>
+            </details>
+            <details>
+                <summary>Wie hoch sind die Kosten einer Expat-Versicherung?</summary>
+                <p>Die Beiträge hängen von Alter, Gesundheitszustand, Aufenthaltsland und gewünschtem Leistungsumfang ab. Individuelle Tarife sind bereits mit moderaten monatlichen Beiträgen möglich.</p>
+            </details>
+            <details>
+                <summary>Was passiert bei einer Rückkehr nach Deutschland?</summary>
+                <p>Viele internationale Versicherer bieten flexible Anschlusslösungen oder erleichtern die Wiedereingliederung in das deutsche Versicherungssystem.</p>
+            </details>
+        </div>
+    </section>
+    <section class="interessanter">
+        <h2>Das könnte ebenfalls interessant für dich sein:</h2>
+        <p class="intro">Weitere Informationen rund um internationale Absicherung und Versicherungen für das Leben im Ausland.</p>
+        <div class="interessanter-list">
+            <div class="interessanter-row">
+                <span class="interessanter-num">(1)</span>
+                <div class="interessanter-content">
+                    <div class="img-wrap">
+                        <img src="images/pexels-horacio-lander-1239977167-35578134_ergebnis.webp" alt="" width="400" height="300" loading="lazy">
+                    </div>
+                    <div>
+                        <h3>Internationale Krankenversicherung</h3>
+                        <p>Umfassender Gesundheitsschutz für langfristige Aufenthalte außerhalb Deutschlands – mit weltweiter Gültigkeit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="interessanter-row">
+                <span class="interessanter-num">(2)</span>
+                <div class="interessanter-content">
+                    <div class="img-wrap">
+                        <img src="images/pexels-horacio-lander-1239977167-35578134_ergebnis.webp" alt="" width="400" height="300" loading="lazy">
+                    </div>
+                    <div>
+                        <h3>Private Haftpflicht im Ausland</h3>
+                        <p>Schutz vor finanziellen Folgen bei Personen- oder Sachschäden während deines Auslandsaufenthalts.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="interessanter-row">
+                <span class="interessanter-num">(3)</span>
+                <div class="interessanter-content">
+                    <div class="img-wrap">
+                        <img src="images/pexels-horacio-lander-1239977167-35578134_ergebnis.webp" alt="" width="400" height="300" loading="lazy">
+                    </div>
+                    <div>
+                        <h3>Rückkehr nach Deutschland absichern</h3>
+                        <p>So gelingt der nahtlose Übergang zurück ins deutsche Versicherungssystem ohne Versorgungslücken.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="cta">
+        <div class="cta-box">
+            <svg class="cta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"/></svg>
+            <h2>Jetzt persönliche Beratung zur Auslandsversicherung erhalten</h2>
+            <p>Lass uns gemeinsam die passende Expat-Versicherung für dein Zielland finden. Unverbindlich, transparent und individuell auf deine Situation zugeschnitten.</p>
+            <div class="button-container"><button>direkt eine Anfrage stellen</button></div>
+        </div>
+    </section>
+</main>
+<script defer>
+(function () {
+    function run() {
+        var section = document.querySelector('.zahlen');
+        if (section) {
+            var observer = new IntersectionObserver(function (entries) {
+                for (var i = 0; i < entries.length; i++) {
+                    if (entries[i].isIntersecting) entries[i].target.classList.add('in-view');
+                }
+            }, { threshold: 0.5 });
+            observer.observe(section);
+        }
+    }
+    if (window.requestIdleCallback) {
+        requestAnimationFrame(function () {
+            requestIdleCallback(run, { timeout: 2000 });
+        });
+    } else {
+        requestAnimationFrame(function () { setTimeout(run, 1); });
+    }
+})();
+</script>
+</body>
+</html>

@@ -1,4 +1,88 @@
-# Kern-Template - Individuelle Inhalte pro Seite
+<!--  
+    ============================================
+    WICHTIG: CANVAS-FORMAT - ALLES IN EINEM HTML-CANVAS!
+    ============================================
+    
+    ⚠️  KRITISCHE ANWEISUNG FÜR AI: VERWENDE EINEN KOPIERBAREN CANVAS, NICHT NUR TEXTNACHRICHT!
+    
+    WICHTIG: Du MUSST einen kopierbaren Canvas verwenden, nicht nur eine Textnachricht!
+    - NICHT: HTML-Code in einer normalen Textnachricht ausgeben
+    - SONDERN: Einen kopierbaren Canvas-Block verwenden (z.B. mit ```html oder Code-Block)
+    - Der Canvas muss kopierbar sein - der Benutzer muss alles auf einmal kopieren können
+    - ALLES zusammen: Kommentare UND HTML-Gerüst im selben kopierbaren Canvas
+    - ALLE HTML-Kommentare (<!-- ... -->) müssen im Canvas sein
+    - Das komplette HTML-Gerüst muss im selben Canvas sein
+    - Format: Kopierbarer Code-Block/Canvas mit Kommentaren + HTML-Code zusammen!
+    
+    ⚠️  KRITISCH: Auch dieser gesamte Kommentar-Block (inkl. aller Anweisungen) muss im Canvas sein!
+    - Dieser Kommentar-Block selbst (Zeilen 1-74) muss WORTWÖRTLICH im Canvas enthalten sein
+    - Alle Anweisungen und Hinweise müssen im Canvas sein
+    - NICHTS weglassen - der gesamte Kommentar-Block gehört in den Canvas!
+    
+    WICHTIG: Auch die strukturierenden Kommentare wie <!-- MAIN SECTION -->, 
+    <!-- Hauptüberschrift --> etc. müssen im kopierbaren Canvas enthalten sein!
+    Diese Kommentare sind Teil der Struktur und müssen kopierbar sein.
+    
+    BEISPIEL-FORMAT:
+    ```html
+    <!-- Dieser gesamte Kommentar-Block muss hier sein -->
+    <!-- Kommentare hier -->
+    <h1>...</h1>
+    <!-- Weitere Kommentare -->
+    <p>...</p>
+    ```
+    
+    ============================================
+    WICHTIG: KOMMENTARE BEIBEHALTEN
+    ============================================
+    
+    ⚠️  ANWEISUNG FÜR AI: ALLE KOMMENTARE MÜSSEN IM HTML-CANVAS ENTHALTEN SEIN!
+    
+    Wenn du Inhalte aus diesem Template änderst oder in HTML-Dateien einfügst:
+    - ALLE HTML-Kommentare (<!-- ... -->) müssen im finalen HTML-Code erhalten bleiben
+    - Die Kommentare sind Teil der Struktur und müssen im Canvas sein
+    - Kommentare dürfen NICHT entfernt werden, auch wenn Inhalte geändert werden
+    - Alle Kommentare müssen zusammen mit dem HTML-Code im Canvas wiedergegeben werden
+    
+    Die HTML-Kommentare sind wichtig für die Strukturierung und Orientierung.
+    
+    ============================================
+    KERN-TEMPLATE - INDIVIDUELLE INHALTE PRO SEITE
+    ============================================
+    
+    ⚠️  KRITISCH WICHTIG: ALLE Inhalte unter diesem Abschnitt müssen WORTWÖRTLICH in den Canvas übertragen werden!
+    - Übertrage ALLES unter diesem Titel WORTWÖRTLICH in den kopierbaren Canvas
+    - Jeder HTML-Kommentar (<!-- ... -->) muss EXAKT so übernommen werden
+    - Jeder HTML-Code muss EXAKT so übernommen werden
+    - NICHTS ändern, NICHTS weglassen - WORTWÖRTLICH übernehmen!
+    - Alle HTML-Kommentare und HTML-Code unter diesem Titel gehören WORTWÖRTLICH in den Canvas
+    
+    ⚠️  WICHTIG: Dieser gesamte Kommentar-Block (inkl. dieser Zeilen 47-69) muss im Canvas sein!
+    - Der gesamte Kommentar-Block von Zeile 1 bis zum Ende muss im Canvas enthalten sein
+    - Auch alle Anweisungen und Hinweise (wie diese hier) müssen im Canvas sein
+    - NICHTS auslassen - der KOMPLETTE Kommentar-Block gehört WORTWÖRTLICH in den Canvas!
+    
+    Diese Datei enthält die individuellen Inhalte für die Hauptsektion einer Seite.
+    
+    VERWENDUNG:
+    - Kopiere die gewünschten Sektionen aus dieser Datei
+    - Füge sie in die entsprechende HTML-Datei ein
+    - Passe den Inhalt (Texte, Werte) an deine Bedürfnisse an
+    - Behalte die CSS-Klassen bei, um das Styling zu erhalten
+    
+    WICHTIGE HINWEISE:
+    - Nur die Inhalte der explizit genannten Elemente ändern
+    - NUR der Inhalt wird geändert - die HTML-Semantik bleibt unverändert
+    - Alle anderen Sektionen bleiben komplett unberührt
+    - Alle anderen Elemente (Bilder, Buttons, Struktur, HTML-Tags) unberührt lassen
+    - CSS-Klassen müssen identisch bleiben
+    - HTML-Struktur und Semantik dürfen nicht geändert werden
+    - ALLE KOMMENTARE (<!-- ... -->) müssen erhalten bleiben!
+    
+    ============================================
+    TITEL: KERN-TEMPLATE - INDIVIDUELLE INHALTE PRO SEITE
+    ============================================ 
+-->
 
 <!-- MAIN SECTION -->
 <!-- Hauptüberschrift -->
@@ -13,7 +97,8 @@
 
 <!-- Intro-Text -->
 <p class="intro">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-
+<!-- Item 1 Überschrift -->
+<h3><span class="item-num">02</span> H3 Sachen Achten</h3>
 <!-- Item 1 Text -->
 <p class="p-h3">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
 

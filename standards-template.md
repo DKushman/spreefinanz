@@ -1,9 +1,6 @@
 <!-- 
-    ============================================
-    STANDARDS-TEMPLATE - WIEDERVERWENDBARE SEKTIONEN
-    ============================================
-    
-    Diese Datei enthält wiederverwendbare HTML-Sektionen für die Website.
+
+    Diese Datei enthält die individuellen Inhalte für die Hauptsektion einer Seite.
     
     VERWENDUNG:
     - Kopiere die gewünschten Sektionen aus dieser Datei
@@ -11,13 +8,19 @@
     - Passe den Inhalt (Texte, Werte) an deine Bedürfnisse an
     - Behalte die CSS-Klassen bei, um das Styling zu erhalten
     
-    HINWEIS:
+    WICHTIGE HINWEISE:
     - Nur die Inhalte der explizit genannten Elemente ändern
-    - Alle anderen Elemente (Bilder, Buttons, Struktur) unberührt lassen
+    - NUR der Inhalt wird geändert - die HTML-Semantik bleibt unverändert
+    - Alle anderen Sektionen bleiben komplett unberührt
+    - Alle anderen Elemente (Bilder, Buttons, Struktur, HTML-Tags) unberührt lassen
     - CSS-Klassen müssen identisch bleiben
+    - HTML-Struktur und Semantik dürfen nicht geändert werden
+    - ALLE KOMMENTARE müssen erhalten bleiben!  -->
+    
+    ============================================
+    TITEL: STANDARDS-TEMPLATE - WIEDERVERWENDBARE STANDARD-SEKTIONEN
+    ============================================
 -->
-
-# Standards-Template - Wiederverwendbare Standard-Sektionen
 
 <!-- ZAHLEN SECTION -->
 <!-- Überschrift -->
