@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Versicherungen für Expats</title>
-    <link rel="preload" href="images/pexels-mjlo-30709720_ergebnis_ergebnis.webp" as="image">
+    <link rel="preload" href="images/pexels-mjlo-30709720_ergebnis_ergebnis.webp" as="image" fetchpriority="high">
     <style>
 
         
@@ -447,14 +447,14 @@
         <section class="main">
             <h1 class="heading">Versicherungen<span>für Expats</span></h1>
             <div class="main-content">
-                <img src="images/pexels-mjlo-30709720_ergebnis_ergebnis.webp" alt="Desert path with buildings" width="300" height="400" fetchpriority="high" decoding="async">
+                <img src="images/pexels-mjlo-30709720_ergebnis_ergebnis.webp" alt="Desert path with buildings" width="300" height="400" fetchpriority="high" decoding="sync">
                 <div class="text-block">
                     <p class="p-main">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidun</p>
                     <div class="button-container hero">
                         <button>oder direkt eine Anfrage stellen</button>
                     </div>
                 </div>
-                <img src="images/pexels-horacio-lander-1239977167-35578134_ergebnis_ergebnis.webp" alt="Church on hill with mountains" width="300" height="400" decoding="async">
+                <img src="images/pexels-horacio-lander-1239977167-35578134_ergebnis_ergebnis.webp" alt="Church on hill with mountains" width="300" height="400" loading="lazy" decoding="async">
             </div>
         </section>
 
@@ -514,7 +514,7 @@
                     <h3>Vietnam</h3>
                     <div class="img-wrap">
                         <div class="img-inner">
-                            <img src="images/pexels-vietnamhiddenlight-32759677_ergebnis.webp" alt="Vietnam" width="400" height="300">
+                            <img src="images/pexels-vietnamhiddenlight-32759677_ergebnis.webp" alt="Vietnam" width="400" height="300" loading="lazy">
                         </div>
                         <p class="hover-p">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
                     </div>
@@ -523,7 +523,7 @@
                     <h3>Jamaica</h3>
                     <div class="img-wrap">
                         <div class="img-inner">
-                            <img src="images/pexels-liam-gant-619294-31626238_ergebnis.webp" alt="Jamaica" width="400" height="300">
+                            <img src="images/pexels-liam-gant-619294-31626238_ergebnis.webp" alt="Jamaica" width="400" height="300" loading="lazy">
                         </div>
                         <p class="hover-p">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
                     </div>
@@ -532,7 +532,7 @@
                     <h3>Singapur</h3>
                     <div class="img-wrap">
                         <div class="img-inner">
-                            <img src="images/pexels-mjlo-30709720_ergebnis.webp" alt="Singapur" width="400" height="300">
+                            <img src="images/pexels-mjlo-30709720_ergebnis.webp" alt="Singapur" width="400" height="300" loading="lazy">
                         </div>
                         <p class="hover-p">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
                     </div>
@@ -727,7 +727,7 @@
         </div>
     </section>
 </main>
-<script>
+<script defer>
 (function () {
     function run() {
         var section = document.querySelector('.zahlen');
