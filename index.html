@@ -317,13 +317,12 @@
         .beispiele-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(1rem, 2vw, 1.5rem); }
         .beispiele-item h3 { font-size: clamp(1.5rem, 2vw, 2rem); font-weight: 700; color: #1f2937; text-align: center; margin: 0; padding-bottom: 0; margin-bottom: clamp(1rem, 2vw, 2rem);}
         .beispiele-item .img-wrap { position: relative; overflow: hidden; border-radius: 8px; aspect-ratio: 4/3; cursor: pointer; }
-        .beispiele-item .img-inner { position: absolute; inset: 0; pointer-events: none; }
-        .beispiele-item .img-inner::after { content: ""; position: absolute; inset: 0; background: rgba(0,0,0,0.7); opacity: 0; transition: opacity 0.3s; pointer-events: none; }
+        .beispiele-item .img-wrap::before { content: ""; position: absolute; inset: 0; background: rgba(0,0,0,0.7); opacity: 0; transition: opacity 0.3s; pointer-events: none; z-index: 1; }
         .beispiele-item .img-wrap img { width: 100%; height: 100%; object-fit: cover; display: block; pointer-events: none; }
-        .beispiele-item .img-wrap .hover-p { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; padding: 1rem; color: #fff !important; margin: 0; opacity: 0; transition: opacity 0.3s; font-size: 0.9rem; pointer-events: none; }
-        .beispiele-item .img-wrap:active .img-inner::after, .beispiele-item .img-wrap:active .hover-p { opacity: 1; }
+        .beispiele-item .img-wrap .hover-p { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; padding: 1rem; color: #fff !important; margin: 0; opacity: 0; transition: opacity 0.3s; font-size: 0.9rem; pointer-events: none; z-index: 2; }
+        .beispiele-item .img-wrap:active::before, .beispiele-item .img-wrap:active .hover-p { opacity: 1; }
         
-        .beispiele-item .img-wrap:hover .img-inner::after, .beispiele-item .img-wrap:hover .hover-p { opacity: 1; }
+        .beispiele-item .img-wrap:hover::before, .beispiele-item .img-wrap:hover .hover-p { opacity: 1; }
         @media (max-width: 768px) { .beispiele-grid { grid-template-columns: 1fr; } }
 
         .vorteile { text-align: center; }
@@ -498,34 +497,28 @@
         </ul>
     </section>
     <section class="beispiele">
-        <h2>Was sind einige Beispiele?</h2>
+        <h2>Was sind einige ARS?</h2>
         <p class="intro">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
         <div class="beispiele-wrap">
             <div class="beispiele-grid">
                 <div class="beispiele-item">
                     <h3>Vietnam</h3>
                     <div class="img-wrap">
-                        <div class="img-inner">
-                            <img src="images/pexels-vietnamhiddenlight-32759677_ergebnis.webp" alt="Vietnam" width="400" height="300" loading="lazy">
-                        </div>
+                        <img src="images/pexels-vietnamhiddenlight-32759677_ergebnis.webp" alt="Vietnam" width="400" height="300" loading="lazy">
                         <p class="hover-p">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
                     </div>
                 </div>
                 <div class="beispiele-item">
                     <h3>Jamaica</h3>
                     <div class="img-wrap">
-                        <div class="img-inner">
-                            <img src="images/pexels-liam-gant-619294-31626238_ergebnis.webp" alt="Jamaica" width="400" height="300" loading="lazy">
-                        </div>
+                        <img src="images/pexels-liam-gant-619294-31626238_ergebnis.webp" alt="Jamaica" width="400" height="300" loading="lazy">
                         <p class="hover-p">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
                     </div>
                 </div>
                 <div class="beispiele-item">
                     <h3>Singapur</h3>
                     <div class="img-wrap">
-                        <div class="img-inner">
-                            <img src="images/pexels-mjlo-30709720_ergebnis.webp" alt="Singapur" width="400" height="300" loading="lazy">
-                        </div>
+                        <img src="images/pexels-mjlo-30709720_ergebnis.webp" alt="Singapur" width="400" height="300" loading="lazy">
                         <p class="hover-p">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
                     </div>
                 </div>
