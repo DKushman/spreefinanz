@@ -295,7 +295,7 @@
         .fuerwen { max-width: 42rem; margin-inline: auto; }
         .fuerwen-list { list-style: none; padding: 0; margin: 0; }
         .fuerwen-list li { display: flex; align-items: center; margin-bottom: 1rem; }
-        .fuerwen-icon { width: 4rem; height: 4rem; border-radius: 50%; background: transparent; color: #3C68ED; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 1.2rem; border: 2px solid #3C68ED; transition: background-color 0.2s; transition: color 0.2s; cursor: pointer; }
+        .fuerwen-icon { width: 4rem; height: 4rem; border-radius: 50%; background: transparent; color: #3C68ED; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 1.2rem; border: 2px solid #3C68ED; transition: background-color 0.2s; transition: color 0.2s; cursor: pointer; position: relative; }
         .fuerwen-box { flex: 1; min-width: 0; padding: 0.75rem 1rem; border: 2px solid #3C68ED; border-radius: 12px; color: #3C68ED; text-align: center; font-size: clamp(1rem, 1.5vw, 1rem); font-weight: 500;}
         .fuerwen-icon:active {
             background: #2d5ad9;
@@ -319,7 +319,7 @@
         .beispiele-item .img-wrap { position: relative; overflow: hidden; border-radius: 8px; aspect-ratio: 4/3; cursor: pointer; }
         .beispiele-item .img-inner { position: absolute; inset: 0; pointer-events: none; }
         .beispiele-item .img-inner::after { content: ""; position: absolute; inset: 0; background: rgba(0,0,0,0.7); opacity: 0; transition: opacity 0.3s; pointer-events: none; }
-        .beispiele-item .img-wrap img { width: 100%; height: 100%; object-fit: cover; display: block; }
+        .beispiele-item .img-wrap img { width: 100%; height: 100%; object-fit: cover; display: block; pointer-events: none; }
         .beispiele-item .img-wrap .hover-p { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; padding: 1rem; color: #fff !important; margin: 0; opacity: 0; transition: opacity 0.3s; font-size: 0.9rem; pointer-events: none; }
         .beispiele-item .img-wrap:active .img-inner::after, .beispiele-item .img-wrap:active .hover-p { opacity: 1; }
         
@@ -332,7 +332,7 @@
         .vorteile-box:nth-child(2) { grid-column: 1; grid-row: 2; }
         .vorteile-box:nth-child(4) { grid-column: 3; grid-row: 1; }
         .vorteile-box:nth-child(5) { grid-column: 3; grid-row: 2; }
-        .vorteile-box { background: rgba(217, 217, 217, 0.4); border-radius: clamp(8px, 2vw, 12px); padding: clamp(0.75rem, 2vw, 1.25rem); display: flex; flex-direction: column; gap: 0.5rem; text-align: left; transition: background 0.2s; cursor: pointer; }
+        .vorteile-box { background: rgba(217, 217, 217, 0.4); border-radius: clamp(8px, 2vw, 12px); padding: clamp(0.75rem, 2vw, 1.25rem); display: flex; flex-direction: column; gap: 0.5rem; text-align: left; transition: background 0.2s; cursor: pointer; position: relative; }
         .vorteile-box:active { background: rgba(217, 217, 217, 0.65); }
         
         .vorteile-box:hover { background: rgba(217, 217, 217, 0.65); }
