@@ -240,6 +240,18 @@
         .zahlen-h2 {
             text-align: center;
         }
+
+        section.main {
+            padding-top: 0;
+        }
+        .hero-subline-wrap {
+            padding-bottom: clamp(1rem, 2vw, 2rem);
+        }
+        @media (max-width: 768px) {
+            .hero-subline-wrap {
+                padding-bottom: 0;
+            }
+        }
         .zahlen-list {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -439,18 +451,25 @@
         .cta-box p { margin: 0 0 clamp(1rem, 2vw, 1.25rem); color: #4b5563; font-size: clamp(0.9rem, 1.5vw, 1rem); }
 
         .hero-subline {
-            display: flex;
-            justify-content: space-between;
+            text-align: center;
             font-size: clamp(0.6rem, 1vw, 1rem);
             margin: 0;
-            gap: 1rem;
+            color: #7F8AAA;
+            line-height: 0.5;
+            transition: font-weight 0.3s ease-in-out;
+        }
+        .hero-subline:hover {
+            font-weight: 700;
+            transition: font-weight 0.3s ease-in-out;
+        }
     </style>
 </head>
 <body>
     <main>
         <section class="main">
+            <div class="hero-subline-wrap">
             <h1 class="heading">Krankenversicherung<span>im Ausland</span></h1>
-            <p class="hero-subline"><span>✓ Deutsch & Englisch</span><span>✓ digital</span><span>✓ unkompliziert</span></p>
+            <p class="hero-subline">✓ Beratung auf Deutsch & Englisch</p></div>
             <div class="main-content">
                 <img src="https://res.cloudinary.com/dqcdbdt4v/image/upload/f_auto,q_auto,w_300,h_400,c_fill/pexels-mjlo-30709720_ergebnis_ergebnis_kqf3xu.webp" alt="Desert path with buildings" width="300" height="400" fetchpriority="high" decoding="sync" loading="eager" crossorigin="anonymous">
                 <div class="text-block">
@@ -489,12 +508,12 @@
         </div>
     </section>
     <section class="zahlen">
-        <h2 class="zahlen-h2">Was ist in unserer Auslandsversicherung enthalten?</h2>
-        <p class="intro">Unsere internationale Expat-Versicherung bietet dir weltweit umfassenden Schutz – flexibel, transparent und auf langfristige Auslandsaufenthalte ausgelegt. Egal ob du auswandern, remote arbeiten oder mehrere Jahre im Ausland leben möchtest.</p>
+        <h2 class="zahlen-h2">Was ist mit inbegriffen?</h2>
+        <p class="intro">Eine <strong>Krankenversicherung im Ausland</strong> ist mehr als „irgendein Reiseschutz“. Entscheidend sind Geltungsbereich, Leistungsumfang und eine Abwicklung, die auch unterwegs funktioniert. Wir helfen dir, die passende Lösung zu finden – für kurze Reisen, Langzeitaufenthalte, Remote Work oder Auswanderung.</p>
         <ul class="zahlen-list">
-            <li><div class="zahlen-value-wrap"><span class="zahlen-value">180+</span></div><span class="zahlen-label">Länder weltweit versicherbar</span></li>
-            <li><div class="zahlen-value-wrap"><span class="zahlen-value">Bis 1 Mio. €</span></div><span class="zahlen-label">Deckungssumme pro Versicherungsfall</span></li>
-            <li><div class="zahlen-value-wrap"><span class="zahlen-value">365</span></div><span class="zahlen-label">Tage im Jahr weltweiter Schutz</span></li>
+            <li><div class="zahlen-value-wrap"><span class="zahlen-value">Weltweit</span></div><span class="zahlen-label">Geltungsbereich nach Tarif</span></li>
+            <li><div class="zahlen-value-wrap"><span class="zahlen-value">Digital</span></div><span class="zahlen-label">Beratung &amp; Antrag online</span></li>
+            <li><div class="zahlen-value-wrap"><span class="zahlen-value">Flexibel</span></div><span class="zahlen-label">Laufzeiten &amp; Optionen</span></li>
         </ul>
         <div class="button-container">
             <button>Erfahre die genauen Konditionen</button>
@@ -502,38 +521,38 @@
     </section>
     <section class="fuerwen">
         <h2>Für wen ist die Versicherung geeignet?</h2>
-        <p class="intro">Unsere Auslandskranken- und Expat-Versicherung richtet sich an Menschen, die langfristig außerhalb Deutschlands leben oder arbeiten und eine rechtssichere sowie leistungsstarke Absicherung benötigen.</p>
+        <p class="intro">Ob du ein paar Wochen unterwegs bist oder mehrere Jahre im Ausland lebst: Die richtige Auslandskrankenversicherung richtet sich nach Dauer, Land, Status (z. B. angestellt oder selbstständig) und deinem gewünschten Leistungsniveau.</p>
         <ul class="fuerwen-list">
-            <li><span class="fuerwen-icon" tabindex="0" role="button" aria-label="Klickbar">✓</span><span class="fuerwen-box">Auswanderer & Expats mit langfristigem Aufenthalt</span></li>
-            <li><span class="fuerwen-icon" tabindex="0" role="button" aria-label="Klickbar">✓</span><span class="fuerwen-box">Digitale Nomaden & Remote-Arbeitende</span></li>
-            <li><span class="fuerwen-icon" tabindex="0" role="button" aria-label="Klickbar">✓</span><span class="fuerwen-box">Selbstständige & Unternehmer im Ausland</span></li>
-            <li><span class="fuerwen-icon" tabindex="0" role="button" aria-label="Klickbar">✓</span><span class="fuerwen-box">Angestellte mit internationalem Arbeitsvertrag</span></li>
+            <li><span class="fuerwen-icon" tabindex="0" role="button" aria-label="Klickbar">✓</span><span class="fuerwen-box">Du planst Reise, Workation oder Langzeitaufenthalt</span></li>
+            <li><span class="fuerwen-icon" tabindex="0" role="button" aria-label="Klickbar">✓</span><span class="fuerwen-box">Du arbeitest im Ausland oder lebst als Expat</span></li>
+            <li><span class="fuerwen-icon" tabindex="0" role="button" aria-label="Klickbar">✓</span><span class="fuerwen-box">Du willst planbare Kosten statt Risiko</span></li>
+            <li><span class="fuerwen-icon" tabindex="0" role="button" aria-label="Klickbar">✓</span><span class="fuerwen-box">Du brauchst klare Leistungen (ambulant/stationär/Rücktransport)</span></li>
         </ul>
     </section>
     <section class="beispiele">
-        <h2>Beliebte Zielländer unserer Kunden</h2>
-        <p class="intro">Unsere Kunden leben weltweit. Hier sind einige der Länder, für die besonders häufig eine internationale Krankenversicherung abgeschlossen wird.</p>
+        <h2>Typische Situationen im Alltag</h2>
+        <p class="intro">Das Keyword ist gleich – die passende Lösung nicht: „Krankenversicherung im Ausland“ kann je nach Land und Aufenthaltsdauer komplett anders aussehen. Drei typische Beispiele, bei denen Details den Unterschied machen.</p>
         <div class="beispiele-wrap">
             <div class="beispiele-grid">
                 <div class="beispiele-item">
                     <h3>Vietnam</h3>
                     <div class="img-wrap" tabindex="0" role="button" aria-label="Vietnam Details">
                         <img src="https://res.cloudinary.com/dqcdbdt4v/image/upload/f_auto,q_auto,w_400,h_300,c_fill/pexels-vietnamhiddenlight-32759677_ergebnis_oxzzah.webp" alt="Vietnam" width="400" height="300" loading="lazy" crossorigin="anonymous">
-                        <p class="hover-p">Ideal für digitale Nomaden und Langzeitreisende. Eine private Auslandskrankenversicherung schützt dich vor hohen Behandlungskosten in internationalen Kliniken.</p>
+                        <p class="hover-p">Langzeitaufenthalt oder Remote Work: Wichtig sind stabile Leistungen bei Arztbesuchen, Diagnostik und Krankenhaus – plus eine Abwicklung, die auch ohne „Papierkram“ funktioniert.</p>
                     </div>
                 </div>
                 <div class="beispiele-item">
                     <h3>Jamaica</h3>
                     <div class="img-wrap" tabindex="0" role="button" aria-label="Jamaica Details">
                         <img src="https://res.cloudinary.com/dqcdbdt4v/image/upload/f_auto,q_auto,w_400,h_300,c_fill/pexels-liam-gant-619294-31626238_ergebnis_sfdf3f.webp" alt="Jamaica" width="400" height="300" loading="lazy" crossorigin="anonymous">
-                        <p class="hover-p">Besonders bei Selbstständigen und Auswanderern beliebt. Wichtig ist hier eine Police mit Rücktransport und stationärer Versorgung.</p>
+                        <p class="hover-p">Insel, Natur, Aktivitäten: Achte auf Notfallversorgung, sinnvolle Regelungen zum Rücktransport und darauf, wie Sport/Abenteuer im Tarif bewertet werden.</p>
                     </div>
                 </div>
                 <div class="beispiele-item">
                     <h3>Singapur</h3>
                     <div class="img-wrap" tabindex="0" role="button" aria-label="Singapur Details">
                         <img src="https://res.cloudinary.com/dqcdbdt4v/image/upload/f_auto,q_auto,w_400,h_300,c_fill/pexels-mjlo-30709720_ergebnis_cyjwbd.webp" alt="Singapur" width="400" height="300" loading="lazy" crossorigin="anonymous">
-                        <p class="hover-p">Einer der teuersten Gesundheitsmärkte weltweit. Eine leistungsstarke Expat-Versicherung ist hier essenziell.</p>
+                        <p class="hover-p">Hohe Gesundheitskosten möglich: Hier zählt ein Tarif mit passendem Leistungsniveau, klaren Limits und transparenter Kostenlogik – nicht nur der Preis.</p>
                     </div>
                 </div>
             </div>
@@ -568,23 +587,23 @@
         </div>
     </section>
     <section class="warumwir">
-        <h2>Warum über uns absichern?</h2>
-        <p class="intro">Wir sind spezialisiert auf internationale Versicherungen und begleiten dich von der Auswahl bis zur langfristigen Betreuung – transparent, persönlich und zuverlässig.</p>
+        <h2>Warum SpreeFinanz?</h2>
+        <p class="intro">Wir beraten Menschen, die grenzüberschreitend leben und arbeiten. Du bekommst eine klare Empfehlung zur <strong>Krankenversicherung im Ausland</strong> – verständlich erklärt, transparent verglichen und so organisiert, dass du unterwegs nicht allein dastehst.</p>
         <div class="warumwir-grid">
             <div class="warumwir-img">
                 <img src="https://res.cloudinary.com/dqcdbdt4v/image/upload/f_auto,q_auto,w_400,h_300,c_fill/contactphoto_ergebnis_nhjcww.webp" alt="" width="400" height="300" loading="lazy" crossorigin="anonymous">
             </div>
             <div class="warumwir-text">
                 <div class="warumwir-content">
-                    <h3>Wir sind immer<br><span class="h3-blue">erreichbar</span></h3>
-                    <p>Persönliche Ansprechpartner statt anonymer Hotline. Wir unterstützen dich vor, während und nach deinem Auslandsaufenthalt.</p>
+                    <h3>Wir sind schnell<br><span class="h3-blue">erreichbar</span></h3>
+                    <p>Kurze Wege sind im Ausland entscheidend. Deshalb läuft die Kommunikation unkompliziert digital – z. B. per WhatsApp oder Video-Call – damit du schnelle Antworten bekommst, wenn es zählt.</p>
                     <div class="button-container"><button>direkt eine Anfrage stellen</button></div>
                 </div>
             </div>
             <div class="warumwir-text">
                 <div class="warumwir-content">
-                    <h3>Wir beraten <br><span class="h3-blue">unabhängig</span></h3>
-                    <p>Wir vergleichen internationale Anbieter und finden die Lösung, die optimal zu deinem Aufenthaltsland und deinem Budget passt.</p>
+                    <h3>Wir arbeiten<br><span class="h3-blue">transparent</span></h3>
+                    <p>Du siehst die wichtigsten Unterschiede schwarz auf weiß: Geltungsbereich, Leistungen, Selbstbehalt, Ausschlüsse, Laufzeit, Kündigung und Optionen bei Verlängerung oder Rückkehr.</p>
                     <div class="button-container"><button>direkt eine Anfrage stellen</button></div>
                 </div>
             </div>
@@ -596,15 +615,15 @@
             </div>
             <div class="warumwir-text">
                 <div class="warumwir-content">
-                    <h3>Wir denken <br><span class="h3-blue">langfristig</span></h3>
-                    <p>Unsere Konzepte berücksichtigen Rückkehr nach Deutschland, Länderwechsel und flexible Lebensmodelle.</p>
+                    <h3>Wir denken<br><span class="h3-blue">situationsbasiert</span></h3>
+                    <p>Urlaub, Auslandsjob, Freelancer im Ausland oder Auswanderung: Wir wählen den Tarif nicht „nach Schema F“, sondern passend zu Land, Dauer, Budget und deinem gewünschten Leistungsniveau.</p>
                     <div class="button-container"><button>direkt eine Anfrage stellen</button></div>
                 </div>
             </div>
             <div class="warumwir-text">
                 <div class="warumwir-content">
-                    <h3>Wir arbeiten <br><span class="h3-blue">transparent</span></h3>
-                    <p>Klare Leistungen, nachvollziehbare Beiträge und keine versteckten Klauseln – damit du jederzeit Planungssicherheit hast.</p>
+                    <h3>Wir bleiben auch<br><span class="h3-blue">nach Abschluss</span></h3>
+                    <p>Wenn sich dein Plan ändert, du verlängerst oder Fragen zur Abrechnung hast: Wir helfen dir, die nächsten Schritte sauber zu klären – ohne dass du dich allein durch Bedingungen kämpfen musst.</p>
                     <div class="button-container"><button>direkt eine Anfrage stellen</button></div>
                 </div>
             </div>
@@ -616,15 +635,15 @@
     <section class="prozess">
         <div class="prozess-grid">
             <div class="prozess-intro">
-                <h2>Wie läuft die Absicherung ab?</h2>
-                <p class="intro">In nur wenigen Schritten erhältst du deine individuelle Auslandskrankenversicherung – digital, effizient und rechtssicher.</p>
+                <h2>Wie sieht unser Prozess aus?</h2>
+                <p class="intro">In wenigen Schritten zur passenden Lösung: schnell, strukturiert und ohne Fachchinesisch. So findest du die <strong>Krankenversicherung im Ausland</strong>, die wirklich zu deiner Reise oder deinem Leben als Expat passt.</p>
                 <div class="button-container"><button>direkt eine Anfrage stellen</button></div>
             </div>
             <ol class="prozess-steps">
-                <li><span class="prozess-num" aria-hidden="true">1</span><h3>Bedarf analysieren</h3><p>Wir prüfen dein Zielland, deine Aufenthaltsdauer, berufliche Situation und individuelle Anforderungen.</p></li>
-                <li><span class="prozess-num" aria-hidden="true">2</span><h3>Passende Tarife vergleichen</h3><p>Auf Basis deiner Angaben vergleichen wir internationale Versicherer und zeigen dir transparente Optionen.</p></li>
-                <li><span class="prozess-num" aria-hidden="true">3</span><h3>Antrag digital abschließen</h3><p>Der Abschluss erfolgt unkompliziert online – schnell und ohne unnötige Bürokratie.</p></li>
-                <li><span class="prozess-num" aria-hidden="true">4</span><h3>Langfristige Betreuung</h3><p>Auch nach Vertragsabschluss bleiben wir dein Ansprechpartner bei Fragen, Leistungsfällen oder Anpassungen.</p></li>
+                <li><span class="prozess-num" aria-hidden="true">1</span><h3>Bedarf klären</h3><p>Wir klären Land, Aufenthaltsdauer, Status (angestellt/selbstständig), Leistungswünsche (ambulant/stationär/Zahn) und dein Budget. Damit ist sofort klar, welche Tarifarten überhaupt sinnvoll sind.</p></li>
+                <li><span class="prozess-num" aria-hidden="true">2</span><h3>Tarife vergleichen</h3><p>Du bekommst eine transparente Gegenüberstellung: Geltungsbereich (inkl. USA/Kanada falls relevant), Limits, Selbstbehalt, Ausschlüsse, Rücktransport-Regeln sowie Laufzeit- und Verlängerungsoptionen.</p></li>
+                <li><span class="prozess-num" aria-hidden="true">3</span><h3>Abschluss organisieren</h3><p>Wir führen dich durch Antrag und Startdatum, prüfen saubere Angaben (z. B. Vorerkrankungen) und sorgen dafür, dass du genau weißt, wie die Abwicklung unterwegs funktioniert.</p></li>
+                <li><span class="prozess-num" aria-hidden="true">4</span><h3>Unterwegs begleitet</h3><p>Wenn sich deine Reisepläne ändern oder du Fragen zu Leistungen hast, unterstützen wir dich bei der nächsten Entscheidung – z. B. Verlängerung, Anpassung oder Anschlusslösung bei Rückkehr.</p></li>
             </ol>
         </div>
     </section>
@@ -676,8 +695,8 @@
         </div>
     </section>
     <section class="interessanter">
-        <h2>Das könnte ebenfalls interessant für dich sein:</h2>
-        <p class="intro">Weitere Informationen rund um internationale Absicherung und Versicherungen für das Leben im Ausland.</p>
+        <h2>Das könnte auch interessant für euch sein:</h2>
+        <p class="intro">Wenn du international unterwegs bist, macht oft ein abgestimmtes Gesamtpaket Sinn. Hier findest du Themen, die häufig gemeinsam mit einer Krankenversicherung im Ausland geklärt werden.</p>
         <div class="interessanter-list">
             <div class="interessanter-row">
                 <span class="interessanter-num">(1)</span>
@@ -686,8 +705,8 @@
                         <img src="https://res.cloudinary.com/dqcdbdt4v/image/upload/f_auto,q_auto,w_400,h_300,c_fill/pexels-horacio-lander-1239977167-35578134_ergebnis_oa8iiw.webp" alt="" width="400" height="300" loading="lazy" crossorigin="anonymous">
                     </div>
                     <div>
-                        <h3>Internationale Krankenversicherung</h3>
-                        <p>Umfassender Gesundheitsschutz für langfristige Aufenthalte außerhalb Deutschlands – mit weltweiter Gültigkeit.</p>
+                        <h3>Versicherungen für Expats</h3>
+                        <p>Der Überblick für Expats: Welche Absicherungen wirklich relevant sind – und wie du sie sinnvoll kombinierst, ohne doppelt zu zahlen oder Lücken zu riskieren.</p>
                     </div>
                 </div>
             </div>
@@ -698,8 +717,8 @@
                         <img src="https://res.cloudinary.com/dqcdbdt4v/image/upload/f_auto,q_auto,w_400,h_300,c_fill/pexels-horacio-lander-1239977167-35578134_ergebnis_oa8iiw.webp" alt="" width="400" height="300" loading="lazy" crossorigin="anonymous">
                     </div>
                     <div>
-                        <h3>Private Haftpflicht im Ausland</h3>
-                        <p>Schutz vor finanziellen Folgen bei Personen- oder Sachschäden während deines Auslandsaufenthalts.</p>
+                        <h3>Internationale Krankenversicherung</h3>
+                        <p>Wenn du länger bleibst oder auswandern willst: Was internationale Tarife leisten, worin sie sich unterscheiden und welche Details du vor dem Abschluss prüfen solltest.</p>
                     </div>
                 </div>
             </div>
@@ -710,8 +729,8 @@
                         <img src="https://res.cloudinary.com/dqcdbdt4v/image/upload/f_auto,q_auto,w_400,h_300,c_fill/pexels-horacio-lander-1239977167-35578134_ergebnis_oa8iiw.webp" alt="" width="400" height="300" loading="lazy" crossorigin="anonymous">
                     </div>
                     <div>
-                        <h3>Rückkehr nach Deutschland absichern</h3>
-                        <p>So gelingt der nahtlose Übergang zurück ins deutsche Versicherungssystem ohne Versorgungslücken.</p>
+                        <h3>Reise- &amp; Haftpflichtschutz im Ausland</h3>
+                        <p>Medizinische Kosten sind das Eine – Haftpflicht, Unfall und Reisebausteine das Andere. Wir zeigen dir, wann Zusatzschutz sinnvoll ist und wann nicht.</p>
                     </div>
                 </div>
             </div>
@@ -720,8 +739,8 @@
     <section class="cta">
         <div class="cta-box">
             <svg class="cta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"/></svg>
-            <h2>Jetzt persönliche Beratung zur Auslandsversicherung erhalten</h2>
-            <p>Lass uns gemeinsam die passende Expat-Versicherung für dein Zielland finden. Unverbindlich, transparent und individuell auf deine Situation zugeschnitten.</p>
+            <h2>Erhalte eine direkte Beratung</h2>
+            <p>Du willst schnell Klarheit, welcher Tarif für deine <strong>Krankenversicherung im Ausland</strong> wirklich passt? Schreib uns kurz (Land + Dauer + Status) – dann sagen wir dir direkt, welche Optionen sinnvoll sind.</p>
             <div class="button-container"><button>direkt eine Anfrage stellen</button></div>
         </div>
     </section>
@@ -747,6 +766,7 @@
         requestAnimationFrame(function () { setTimeout(run, 1); });
     }
 })();
+
 </script>
 </body>
 </html>
