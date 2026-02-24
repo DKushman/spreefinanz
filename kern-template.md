@@ -139,3 +139,11 @@
     <summary>Im Auto unterwegs</summary>
     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis.</p>
 </details>
+
+
+<!-- CTA SECTION -->
+<!-- Überschrift -->
+<h2>Erhalte eine direkte Beratung</h2>
+
+<!-- CTA Text -->
+<p>Wir helfen euch gerne sofort bei Fragen und stehen euch zur Hilfe bereit.</p>
