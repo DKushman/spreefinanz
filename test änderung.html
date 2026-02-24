@@ -309,7 +309,7 @@
         .fuerwen-list li { display: flex; align-items: center; margin-bottom: 1rem; pointer-events: none; }
         .fuerwen-list li > * { pointer-events: auto; }
         .fuerwen-icon { width: 4rem; height: 4rem; border-radius: 50%; background: transparent; color: #3C68ED; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 1.2rem; border: 2px solid #3C68ED; transition: background-color 0.2s, color 0.2s; cursor: pointer; position: relative; pointer-events: auto; -webkit-tap-highlight-color: transparent; user-select: none; -webkit-user-select: none; touch-action: manipulation; }
-        .fuerwen-box { flex: 1; min-width: 0; padding: 0.75rem 1rem; border: 2px solid #3C68ED; border-radius: 12px; color: #3C68ED; text-align: center; font-size: clamp(1rem, 1.5vw, 1rem); font-weight: 500;}
+        .fuerwen-box { flex: 1; min-width: 0; padding: 0.75rem 1rem; border: 2px solid #3C68ED; border-radius: 12px; color: #3C68ED; text-align: center; font-size: clamp(0.9rem, 1.5vw, 1.2rem); font-weight: 500;}
         .fuerwen-icon:active {
             background: #2d5ad9;
             color: #fff;
@@ -407,7 +407,7 @@
         @media (max-width: 768px) { .fehler-grid { grid-template-columns: 1fr; } }
 
         .faq { text-align: center;  margin-inline: auto; }
-        .faq-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: clamp(0.5rem, 1.5vw, 0.75rem); }
+        .faq-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: clamp(0.5rem, 1.5vw, 0.75rem); margin-bottom: clamp(1.5rem, 3vw, 2rem);}
         .faq-list details { background: #eee; border-radius: clamp(6px, 1.5vw, 10px); padding: 0; overflow: hidden; text-align: left;}
         .faq-list summary { padding: clamp(0.75rem, 2vw, 1rem) clamp(1rem, 2.5vw, 1.25rem); font-size: clamp(0.95rem, 1.8vw, 1.1rem); font-weight: 700; color: #1f2937; cursor: pointer; list-style: none; }
         .faq-list summary::-webkit-details-marker { display: none; }
@@ -530,26 +530,26 @@
         </ul>
     </section>
     <section class="beispiele">
-        <h2>Typische Situationen im Alltag</h2>
-        <p class="intro">Das Keyword ist gleich – die passende Lösung nicht: „Krankenversicherung im Ausland“ kann je nach Land und Aufenthaltsdauer komplett anders aussehen. Drei typische Beispiele, bei denen Details den Unterschied machen.</p>
+        <h2>Weltweit verlässlich!</h2>
+        <p class="intro">Wir kennen deine Situation - du möchtest Deutschland verlassen und die weite Welt erkunden. Wir sind da für dich, um sicherzugehen, dass du auch im Ausland die selben Leistungen wie in Deutschland erwarten kannst.</p>
         <div class="beispiele-wrap">
             <div class="beispiele-grid">
                 <div class="beispiele-item">
-                    <h3>Vietnam</h3>
+                    <h3>Asien</h3>
                     <div class="img-wrap" tabindex="0" role="button" aria-label="Vietnam Details">
                         <img src="https://res.cloudinary.com/dqcdbdt4v/image/upload/f_auto,q_auto,w_400,h_300,c_fill/pexels-vietnamhiddenlight-32759677_ergebnis_oxzzah.webp" alt="Vietnam" width="400" height="300" loading="lazy" crossorigin="anonymous">
                         <p class="hover-p">Langzeitaufenthalt oder Remote Work: Wichtig sind stabile Leistungen bei Arztbesuchen, Diagnostik und Krankenhaus – plus eine Abwicklung, die auch ohne „Papierkram“ funktioniert.</p>
                     </div>
                 </div>
                 <div class="beispiele-item">
-                    <h3>Jamaica</h3>
+                    <h3>Afrika</h3>
                     <div class="img-wrap" tabindex="0" role="button" aria-label="Jamaica Details">
                         <img src="https://res.cloudinary.com/dqcdbdt4v/image/upload/f_auto,q_auto,w_400,h_300,c_fill/pexels-liam-gant-619294-31626238_ergebnis_sfdf3f.webp" alt="Jamaica" width="400" height="300" loading="lazy" crossorigin="anonymous">
                         <p class="hover-p">Insel, Natur, Aktivitäten: Achte auf Notfallversorgung, sinnvolle Regelungen zum Rücktransport und darauf, wie Sport/Abenteuer im Tarif bewertet werden.</p>
                     </div>
                 </div>
                 <div class="beispiele-item">
-                    <h3>Singapur</h3>
+                    <h3>Australien</h3>
                     <div class="img-wrap" tabindex="0" role="button" aria-label="Singapur Details">
                         <img src="https://res.cloudinary.com/dqcdbdt4v/image/upload/f_auto,q_auto,w_400,h_300,c_fill/pexels-mjlo-30709720_ergebnis_cyjwbd.webp" alt="Singapur" width="400" height="300" loading="lazy" crossorigin="anonymous">
                         <p class="hover-p">Hohe Gesundheitskosten möglich: Hier zählt ein Tarif mit passendem Leistungsniveau, klaren Limits und transparenter Kostenlogik – nicht nur der Preis.</p>
@@ -635,9 +635,13 @@
     <section class="prozess">
         <div class="prozess-grid">
             <div class="prozess-intro">
+                <div class="prozess-intro-content">
                 <h2>Wie sieht unser Prozess aus?</h2>
                 <p class="intro">In wenigen Schritten zur passenden Lösung: schnell, strukturiert und ohne Fachchinesisch. So findest du die <strong>Krankenversicherung im Ausland</strong>, die wirklich zu deiner Reise oder deinem Leben als Expat passt.</p>
+                <p class="hero-subline">✓ Beratung auf Deutsch & Englisch</p>
+                </div>
                 <div class="button-container"><button>direkt eine Anfrage stellen</button></div>
+                
             </div>
             <ol class="prozess-steps">
                 <li><span class="prozess-num" aria-hidden="true">1</span><h3>Bedarf klären</h3><p>Wir klären Land, Aufenthaltsdauer, Status (angestellt/selbstständig), Leistungswünsche (ambulant/stationär/Zahn) und dein Budget. Damit ist sofort klar, welche Tarifarten überhaupt sinnvoll sind.</p></li>
@@ -692,6 +696,9 @@
                 <summary>Wie schnell kann ich starten – und wie läuft die Beratung ab?</summary>
                 <p>In vielen Fällen ist ein schneller Start möglich, wenn die Daten vollständig sind. Die Beratung läuft unkompliziert online: Wir klären Land, Reisedauer, Status (z. B. angestellt/freiberuflich), Leistungen und Budget – und wählen daraus die passende Krankenversicherung im Ausland aus. Danach begleiten wir dich bei Antrag und Abwicklung.</p>
             </details>
+        </div>
+        <div class="button-container">
+            <button>direkt eine Anfrage stellen</button>
         </div>
     </section>
     <section class="interessanter">
