@@ -19,24 +19,12 @@
     
 
 <!-- ZAHLEN SECTION -->
+<!--  bitte >
 <!-- Überschrift -->
 <h2 class="zahlen-h2">Was ist mit inbegriffen?</h2>
 
 <!-- Intro-Text -->
 <p class="intro">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
-
-<!-- Zahlen Item 1 -->
-<span class="zahlen-value">+180</span>
-<span class="zahlen-label">Länder</span>
-
-<!-- Zahlen Item 2 -->
-<span class="zahlen-value">+10M</span>
-<span class="zahlen-label">Euro abgesichert</span>
-
-<!-- Zahlen Item 3 -->
-<span class="zahlen-value">365</span>
-<span class="zahlen-label">Tage Schutz</span>
-
 <!-- FUERWEN SECTION -->
 <!-- Überschrift -->
 <h2>Für wen ist die Versicherung geeignet?</h2>
@@ -177,9 +165,3 @@
 <!-- Interessanter Item 3 Text -->
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
 
-<!-- CTA SECTION -->
-<!-- Überschrift -->
-<h2>Erhalte eine direkte Beratung</h2>
-
-<!-- CTA Text -->
-<p>Wir helfen euch gerne sofort bei Fragen und stehen euch zur Hilfe bereit.</p>
