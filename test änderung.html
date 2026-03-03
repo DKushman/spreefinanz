@@ -174,7 +174,11 @@
             justify-content: space-around;
             animation: scroll 30s linear infinite;
         }
-        .logos span { font-size: 4rem; opacity: 0.7; }
+        .logos img {
+            height: 40px;
+            width: auto;
+            object-fit: contain;
+        }
         @keyframes scroll { to { transform: translateX(calc(-100% - var(--g))); } }
 
         .worauf-achten {
@@ -490,8 +494,22 @@
         </section>
 
     <div class="logos">
-        <div><span>◆</span><span>★</span><span>●</span><span>▲</span><span>■</span><span>♦</span></div>
-        <div aria-hidden="true"><span>◆</span><span>★</span><span>●</span><span>▲</span><span>■</span><span>♦</span></div>
+        <div>
+            <img src="https://cdn.digidor.de/storage/f26f73ba7f/catcher/63b116bb4920f.png" alt="Logo 1">
+            <img src="https://cdn.digidor.de/storage/f26f73ba7f/catcher/63b117bbc1aca.png" alt="Logo 2">
+            <img src="https://cdn.digidor.de/storage/f26f73ba7f/catcher/63b1167d5e9e5.png" alt="Logo 3">
+            <img src="https://cdn.digidor.de/storage/f26f73ba7f/catcher/63b11465f6a9e.png" alt="Logo 4">
+            <img src="https://cdn.digidor.de/storage/f26f73ba7f/catcher/63b11643bc10e.png" alt="Logo 5">
+            <img src="https://cdn.digidor.de/storage/f26f73ba7f/catcher/63b117660e810.png" alt="Logo 6">
+        </div>
+        <div aria-hidden="true">
+            <img src="https://cdn.digidor.de/storage/f26f73ba7f/catcher/63b116bb4920f.png" alt="Logo 1">
+            <img src="https://cdn.digidor.de/storage/f26f73ba7f/catcher/63b117bbc1aca.png" alt="Logo 2">
+            <img src="https://cdn.digidor.de/storage/f26f73ba7f/catcher/63b1167d5e9e5.png" alt="Logo 3">
+            <img src="https://cdn.digidor.de/storage/f26f73ba7f/catcher/63b11465f6a9e.png" alt="Logo 4">
+            <img src="https://cdn.digidor.de/storage/f26f73ba7f/catcher/63b11643bc10e.png" alt="Logo 5">
+            <img src="https://cdn.digidor.de/storage/f26f73ba7f/catcher/63b117660e810.png" alt="Logo 6">
+        </div>
     </div>
     <section class="worauf-achten">
         <h2>Worauf solltest du achten?</h2>
